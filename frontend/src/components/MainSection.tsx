@@ -3,12 +3,12 @@ import {Box, Button, Stack, Typography} from "@mui/material";
 import Banner from "../assets/main-pic.jpg"
 import animals from "../assets/animal_cards.json";
 import {AnimalPaper} from "./AnimalPaper";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export const MainSection: FC = () => {
     const navigate = useNavigate();
 
-    return <Box textAlign='center' bgcolor='#f5f5dc'>
+    return <Box textAlign='center'>
         <Stack rowGap={1} alignItems='center'>
             <Box sx={{
                 position: 'relative',
@@ -28,7 +28,7 @@ export const MainSection: FC = () => {
             <Button onClick={() => navigate('/opening-hours')} sx={{
                 bgcolor: '#b73337',
                 borderRadius: '30px',
-                color: '#fff',
+                color: 'black',
                 display: 'block',
                 fontWeight: '700',
                 minWidth: '243px',
@@ -41,9 +41,17 @@ export const MainSection: FC = () => {
                                                 name={animal.name}
                                                 shortDescription={animal.shortDescription}
                                                 animalFile={animal.animalFile}/>)}
-            <Link to={'/animals'}>
-                <Typography fontWeight='bold' variant='h5'>Všetky zvieratá</Typography>
-            </Link>
+            <Button onClick={() => navigate('/animals')} sx={{
+                bgcolor: '#b73337',
+                borderRadius: '30px',
+                color: 'black',
+                display: 'block',
+                fontWeight: '700',
+                minWidth: '243px',
+                padding: '18px 62px',
+                textAlign: 'center',
+                marginBottom: '20px'
+            }}>Všetky zvieratá</Button>
         </Stack>
     </Box>
         ;
