@@ -24,14 +24,16 @@ const theme = createTheme({
             main: '#b73337',
         },
         text: {
-            primary: 'black',
+            primary: '#000000',
             secondary: 'whitesmoke',
         },
         background: {
             paper: '#b73337',
         },
         divider: 'whitesmoke',
+
     },
+
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
