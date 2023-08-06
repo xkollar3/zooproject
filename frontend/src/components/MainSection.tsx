@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {Box, Button, Stack, Typography} from "@mui/material";
+import {Box, Button, Stack, Typography, useMediaQuery} from "@mui/material";
 import Banner from "../assets/main-pic.jpg"
 import animals from "../assets/animal_cards.json";
 import {AnimalPaper} from "./AnimalPaper";
@@ -7,6 +7,11 @@ import {useNavigate} from "react-router-dom";
 
 export const MainSection: FC = () => {
     const navigate = useNavigate();
+
+    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
+        || theme.breakpoints.down("xs"));
+
+    const animalsToDisplay = isMobile ? animals.slice(0, 1) : animals.slice(0, 2);
 
     return <Box textAlign='center'>
         <Stack rowGap={1} alignItems='center'>
@@ -19,7 +24,10 @@ export const MainSection: FC = () => {
                 minHeight: '200px',
                 width: '100%',
                 borderBottomLeftRadius: '5%',
-                borderBottomRightRadius: '5%'
+                borderBottomRightRadius: '5%',
+                "@media (min-width: 960px)": {
+                    backgroundSize: "auto 100%", // Set background size to 100% width and auto height on PC
+                },
             }}>
                 <Typography paddingTop="10rem" fontWeight='bold' variant='h5'>
                     Zažite deň v Panthera Parku!
@@ -36,11 +44,13 @@ export const MainSection: FC = () => {
                 textAlign: 'center',
             }}>Otváracie hodiny</Button>
             <Typography fontWeight='bold' variant='h5' color='#b73337'>Nájdete u nás:</Typography>
-            {animals.map(animal => <AnimalPaper id={animal.id}
-                                                key={animal.id}
-                                                name={animal.name}
-                                                shortDescription={animal.shortDescription}
-                                                animalFile={animal.animalFile}/>)}
+            <Stack display="flex" flexDirection={isMobile ? "column" : "row"} justifyContent='center'>
+                {animalsToDisplay.map(animal => <AnimalPaper id={animal.id}
+                                                             key={animal.id}
+                                                             name={animal.name}
+                                                             shortDescription={animal.shortDescription}
+                                                             animalFile={animal.animalFile}/>)}
+            </Stack>
             <Button onClick={() => navigate('/animals')} sx={{
                 bgcolor: '#b73337',
                 borderRadius: '30px',

@@ -9,7 +9,8 @@ interface FooterSectionProps {
 }
 
 export const FooterSection: FC<FooterSectionProps> = () => {
-    return <Stack textAlign='center' display='flex' width='100%' minHeight='250px' bgcolor='#363636'>
+
+    return <Stack textAlign='center' display='flex' width='100%' minHeight='100px' bgcolor='#363636'>
         <Divider/>
         <Stack padding='20px' justifyContent='space-evenly' flexDirection='row' color='white'>
             <Stack fontSize='1px' alignItems='center'>
@@ -19,7 +20,7 @@ export const FooterSection: FC<FooterSectionProps> = () => {
             </Stack>
             <Stack fontSize='1px' alignItems='center'>
                 <Typography fontWeight='bold'>Médiá</Typography>
-                <Link to="https://www.facebook.com/profile.php?id=61550043834160">
+                <Link to="https://www.facebook.com/profile.php?id=100095276537413">
                     <IconButton>
                         <FacebookIcon sx={{color: 'white'}}/>
                         <Typography color='white'>Facebook</Typography>

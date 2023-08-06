@@ -13,10 +13,13 @@ export const LandingView: FC<LandingViewProps> = () => {
         sx={{
             minHeight: '100vh',
             overflow: 'hidden',
-            padding: '120px 0 60px',
+            paddingTop: '120px',
             position: 'relative',
             width: '100%',
-            zIndex: '100'
+            zIndex: '100',
+            "@media (max-width: 960px)" :  {
+                paddingBottom: '0px'
+            }
         }}
     >
         <Header/>

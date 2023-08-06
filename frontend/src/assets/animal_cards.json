@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name" : "Páv Korunkatý",
+    "name": "Páv Korunkatý",
     "shortDescription": "Páv korunkatý (iné názvy: páv obyčajný, páv modrý lat. Pavo cristatus) je vták z čeľade bažantovité (Phasianidae). Jeho domovinou je India a Srí Lanka...",
     "description": "Páv korunkatý (iné názvy: páv obyčajný, páv modrý lat. Pavo cristatus) je vták z čeľade bažantovité (Phasianidae). Jeho domovinou je India a Srí Lanka. Podľa Medzinárodnej únie na ochranu prírody a prírodných zdrojov páv korunkatý patrí medzi najmenej ohrozené druhy, celková populácia je stabilná, obýva aj pozmenené biotopy a nevyhýba sa ani blízkosti ľudských sídiel.",
     "latinName": "Pavo Cristatus",
@@ -10,7 +10,7 @@
     "endangerment": "Najmenej ohrozený",
     "food": "semená, zrná, zelené časti rastlín, hmyz, drobné plazy a cicavce",
     "weight": {
-      "adultMale": "4-6 kg",
+      "adultMale": "4 - 6 kg",
       "adultFemale": "2.8 - 4 kg"
     },
     "height": {
@@ -18,6 +18,22 @@
       "female": "90 - 100 cm"
     },
     "animalFile": "/src/assets/1.jpg",
+    "mapFile": null
+  },
+  {
+    "id": 2,
+    "name": "Leopard ",
+    "shortDescription": "Leopard obláčikový (iné názvy: leopard obláčkový, staršie mačka leopardovitá, lat. Neofelis nebulosa) je najmenší druh podčeľade veľkých mačiek.",
+    "description": "Leopard obláčikový (iné názvy: leopard obláčkový, staršie mačka leopardovitá, lat. Neofelis nebulosa) je najmenší druh podčeľade veľkých mačiek. Má nepravidelné škvrny s čiernym okrajom a tmavším stredom na žltohnedej, sivej alebo striebristej podkladovej srsti",
+    "latinName": "Neofelis nebulosa",
+    "occurence": "Južná, Juhovýchodná a Východná Ázia",
+    "lifeLength": "17 rokov",
+    "endangerment": "Zraniteľný",
+    "food": "R",
+    "weight": {
+      "adultMale": "16 - 23 kg"
+    },
+    "animalFile": "/src/assets/2.jpg",
     "mapFile": null
   }
 ]

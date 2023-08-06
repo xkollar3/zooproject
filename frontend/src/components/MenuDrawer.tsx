@@ -1,11 +1,23 @@
 import {useState} from "react";
 import {
-    Divider, Drawer, IconButton, List, ListItem, ListItemText, Stack, Typography,
+    Divider,
+    Drawer,
+    IconButton,
+    List,
+    ListItem,
+    ListItemText,
+    Stack,
+    Typography,
+    useMediaQuery,
 } from "@mui/material";
 import {ArrowBack, Menu} from "@mui/icons-material";
 
 export default function MenuDrawer() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
+        || theme.breakpoints.down("xs"));
+
+    const drawerWidth = isMobile ? "100%" : "20%";
 
     return <>
         <IconButton onClick={() => setIsDrawerOpen(true)}>
@@ -16,9 +28,9 @@ export default function MenuDrawer() {
                 open={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
                 PaperProps={{
-                    sx: { width: "100%", height: "100%", color: 'text.secondary' },
+                    sx: {width: drawerWidth, height: "100%", color: 'text.secondary'},
                 }}
-                >
+        >
             <Stack alignItems='center'>
                 <List sx={{width: '80%'}}>
                     <IconButton onClick={() => setIsDrawerOpen(false)}>
