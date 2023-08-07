@@ -28,13 +28,13 @@ export default function MenuDrawer() {
                 open={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
                 PaperProps={{
-                    sx: {width: drawerWidth, height: "100%", color: 'text.secondary'},
+                    sx: {width: drawerWidth, height: "100%", color: '#442e1d', bgcolor: '#f6efe3'},
                 }}
         >
             <Stack alignItems='center'>
-                <List sx={{width: '80%'}}>
+                <List color='#442e1d' sx={{width: '80%'}}>
                     <IconButton onClick={() => setIsDrawerOpen(false)}>
-                        <ArrowBack color='primary'/>
+                        <ArrowBack/>
                     </IconButton>
                     <ListItem>
                         <ListItemText>Otváracie hodiny</ListItemText>
@@ -42,6 +42,22 @@ export default function MenuDrawer() {
                     <Divider/>
                     <ListItem>
                         <ListItemText>Adresa</ListItemText>
+                    </ListItem>
+                    <Divider/>
+                    <ListItem>
+                        <ListItemText>O nás</ListItemText>
+                    </ListItem>
+                    <Divider/>
+                    <ListItem>
+                        <ListItemText>Zvieratá</ListItemText>
+                    </ListItem>
+                    <Divider/>
+                    <ListItem>
+                        <ListItemText>Cenník</ListItemText>
+                    </ListItem>
+                    <Divider/>
+                    <ListItem>
+                        <ListItemText>Návštevnícky poriadok</ListItemText>
                     </ListItem>
                     <Divider/>
                 </List>

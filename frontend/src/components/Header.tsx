@@ -13,11 +13,11 @@ export const Header: FC<HeaderProps> = () => {
         || theme.breakpoints.down("xs"));
 
     return <AppBar>
-        <Stack alignItems='center'>
+        <Stack alignItems='center' bgcolor='#f6efe3'>
             <img style={{width: isMobile ? '60%' : '15%', paddingTop: '20px'}} alt='logo' src={Logo}/>
-            <Stack flexDirection='row' justifyContent='center' alignItems='center'>
+            <Stack flexDirection='row' justifyContent='center' alignItems='center' bgcolor='#f6efe3'>
                 <IconButton>
-                    <Typography padding='10' color='text.primary' variant='h6'>Slovensky</Typography>
+                    <Typography padding='10' color='#442e1d' variant='h6'>Slovensky</Typography>
                     <LanguageIcon style={{color:'black'}}/>
                 </IconButton>
                 <MenuDrawer/>

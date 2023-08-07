@@ -10,7 +10,7 @@ interface FooterSectionProps {
 
 export const FooterSection: FC<FooterSectionProps> = () => {
 
-    return <Stack textAlign='center' display='flex' width='100%' minHeight='100px' bgcolor='#363636'>
+    return <Stack textAlign='center' display='flex' width='100%' minHeight='100px' bgcolor='#442e1d'>
         <Divider/>
         <Stack padding='20px' justifyContent='space-evenly' flexDirection='row' color='white'>
             <Stack fontSize='1px' alignItems='center'>

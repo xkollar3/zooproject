@@ -13,7 +13,7 @@ export const MainSection: FC = () => {
 
     const animalsToDisplay = isMobile ? animals.slice(0, 1) : animals.slice(0, 2);
 
-    return <Box textAlign='center'>
+    return <Box textAlign='center' bgcolor='#f6efe3'>
         <Stack rowGap={1} alignItems='center'>
             <Box sx={{
                 position: 'relative',
@@ -34,7 +34,7 @@ export const MainSection: FC = () => {
                 </Typography>
             </Box>
             <Button onClick={() => navigate('/opening-hours')} sx={{
-                bgcolor: '#b73337',
+                bgcolor: '#f8b957',
                 borderRadius: '30px',
                 color: 'black',
                 display: 'block',
@@ -43,7 +43,7 @@ export const MainSection: FC = () => {
                 padding: '18px 62px',
                 textAlign: 'center',
             }}>Otváracie hodiny</Button>
-            <Typography fontWeight='bold' variant='h5' color='#b73337'>Nájdete u nás:</Typography>
+            <Typography fontWeight='bold' variant='h5' color='#b6490c'>Nájdete u nás:</Typography>
             <Stack display="flex" flexDirection={isMobile ? "column" : "row"} justifyContent='center'>
                 {animalsToDisplay.map(animal => <AnimalPaper id={animal.id}
                                                              key={animal.id}
@@ -52,7 +52,7 @@ export const MainSection: FC = () => {
                                                              animalFile={animal.animalFile}/>)}
             </Stack>
             <Button onClick={() => navigate('/animals')} sx={{
-                bgcolor: '#b73337',
+                bgcolor: '#f8b957',
                 borderRadius: '30px',
                 color: 'black',
                 display: 'block',

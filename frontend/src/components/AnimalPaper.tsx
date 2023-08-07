@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import {Box, CardMedia, Stack, Typography} from '@mui/material';
-import { Link } from 'react-router-dom';
+import {CardMedia, Paper, Stack, Typography} from '@mui/material';
 
 interface AnimalPaperProps {
     id: number;
@@ -11,11 +10,12 @@ interface AnimalPaperProps {
 
 export const AnimalPaper: FC<AnimalPaperProps> = (animalPaperProps) => {
     return (
-        <Box
+        <Paper
             key={animalPaperProps.id}
             sx={{
                 margin: '12px',
-                background: 'white',
+                background: '#f6efe3',
+                color: '#ddcbaf',
                 '@media (min-width: 960px)': {
                     width: '25%',
                 },
@@ -44,13 +44,14 @@ export const AnimalPaper: FC<AnimalPaperProps> = (animalPaperProps) => {
                         src={animalPaperProps.animalFile}
                     />
                 </div>
-                <Typography variant="h6" color="text.primary">
+                <Typography variant="h6" color='#44321d'>
                     {animalPaperProps.shortDescription}
                 </Typography>
-                <Link to={`/${animalPaperProps.id}`}>
-                    <Typography variant="h6">Prečítať viac</Typography>
-                </Link>
+                {/* change link to button or make the cards clickable with animation}
+                {/*<Link to={`/${animalPaperProps.id}`}>*/}
+                {/*    <Typography variant="h6">Prečítať viac</Typography>*/}
+                {/*</Link>*/}
             </Stack>
-        </Box>
+        </Paper>
     );
 };
