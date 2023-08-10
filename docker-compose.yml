@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    container_name: panthera-frontend
+    ports:
+      - '3000:3000'
