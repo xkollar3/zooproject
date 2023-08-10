@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC} from 'react';
 import {CardMedia, Paper, Stack, Typography} from '@mui/material';
 
 interface AnimalPaperProps {
@@ -47,7 +47,7 @@ export const AnimalPaper: FC<AnimalPaperProps> = (animalPaperProps) => {
                 <Typography variant="h6" color='#44321d'>
                     {animalPaperProps.shortDescription}
                 </Typography>
-                {/* change link to button or make the cards clickable with animation}
+                {/*TODO: change link to button or make the cards clickable with animation}
                 {/*<Link to={`/${animalPaperProps.id}`}>*/}
                 {/*    <Typography variant="h6">Prečítať viac</Typography>*/}
                 {/*</Link>*/}

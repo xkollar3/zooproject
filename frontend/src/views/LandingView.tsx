@@ -18,7 +18,8 @@ export const LandingView: FC<LandingViewProps> = () => {
             width: '100%',
             zIndex: '100',
             "@media (max-width: 960px)" :  {
-                paddingBottom: '0px'
+                paddingBottom: 0,
+                paddingTop: 0
             }
         }}
     >

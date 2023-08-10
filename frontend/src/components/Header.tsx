@@ -12,16 +12,34 @@ export const Header: FC<HeaderProps> = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
+    return isMobile ? <MobileHeader/> : <NormalHeader/>;
+}
+
+const MobileHeader: FC = () => {
     return <AppBar>
         <Stack alignItems='center' bgcolor='#f6efe3'>
-            <img style={{width: isMobile ? '60%' : '15%', paddingTop: '20px'}} alt='logo' src={Logo}/>
+            <img style={{width: '60%', paddingTop: '20px'}} alt='logo' src={Logo}/>
             <Stack flexDirection='row' justifyContent='center' alignItems='center' bgcolor='#f6efe3'>
                 <IconButton>
                     <Typography padding='10' color='#442e1d' variant='h6'>Slovensky</Typography>
-                    <LanguageIcon style={{color:'black'}}/>
+                    <LanguageIcon style={{color: 'black'}}/>
                 </IconButton>
                 <MenuDrawer/>
             </Stack>
+        </Stack>
+    </AppBar>;
+}
+
+
+const NormalHeader: FC = () => {
+    return <AppBar>
+        <Stack padding={1} columnGap={8} flexDirection='row' justifyContent='center' alignItems='baseline' bgcolor='#f6efe3'>
+            <IconButton>
+                <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
+                <LanguageIcon style={{color: 'black'}}/>
+            </IconButton>
+            <img style={{width: '20%', paddingTop: '20px'}} alt='logo' src={Logo}/>
+            <MenuDrawer/>
         </Stack>
     </AppBar>;
 }

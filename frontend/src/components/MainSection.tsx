@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {Box, Button, Stack, Typography, useMediaQuery} from "@mui/material";
-import Banner from "../assets/main-pic.jpg"
+import Banner from "../assets/banner.jpg"
 import animals from "../assets/animal_cards.json";
 import {AnimalPaper} from "./AnimalPaper";
 import {useNavigate} from "react-router-dom";
@@ -16,21 +16,26 @@ export const MainSection: FC = () => {
     return <Box textAlign='center' bgcolor='#f6efe3'>
         <Stack rowGap={1} alignItems='center'>
             <Box sx={{
+                width: '100%',
+                minHeight: '400px',
                 position: 'relative',
                 backgroundImage: `url(${Banner})`, // Set the Banner image as the background
-                backgroundSize: 'cover', // Set background size to 100% width, auto height
-                backgroundPosition: 'center', // Center the background image
+                backgroundPosition: '50%',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
                 color: 'white', // Set text color to white to improve visibility
-                minHeight: '200px',
-                width: '100%',
-                borderBottomLeftRadius: '5%',
-                borderBottomRightRadius: '5%',
-                "@media (min-width: 960px)": {
-                    backgroundSize: "auto 100%", // Set background size to 100% width and auto height on PC
+                boxSizing: 'border-box',
+                border: 0,
+                fontSize: '100%',
+                font: 'inherit',
+                margin: 0,
+                padding: 0,
+                verticalAlign: 'baseline',
+                "@media (max-width: 560px)": {
                 },
             }}>
-                <Typography paddingTop="10rem" fontWeight='bold' variant='h5'>
-                    Zažite deň v Panthera Parku!
+                <Typography paddingTop='18rem' fontWeight='bold' variant={isMobile ? 'h5' : 'h4'}>
+                    Vítame Vás v Parku s najväčším množstvom mačkovitých šeliem v Európe!
                 </Typography>
             </Box>
             <Button onClick={() => navigate('/opening-hours')} sx={{
