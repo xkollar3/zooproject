@@ -17,7 +17,7 @@
       "male": "180 - 230 cm",
       "female": "90 - 100 cm"
     },
-    "animalFile": "/src/assets/1.jpg",
+    "animalFile": "/1.jpg",
     "mapFile": null
   },
   {
@@ -33,7 +33,7 @@
     "weight": {
       "adultMale": "16 - 23 kg"
     },
-    "animalFile": "/src/assets/2.jpg",
+    "animalFile": "/2.jpg",
     "mapFile": null
   }
 ]
