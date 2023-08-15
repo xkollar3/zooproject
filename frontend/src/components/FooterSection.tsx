@@ -9,30 +9,31 @@ interface FooterSectionProps {
 }
 
 export const FooterSection: FC<FooterSectionProps> = () => {
-
-    return <Stack textAlign='center' display='flex' width='100%' minHeight='100px' bgcolor='#442e1d'>
-        <Divider/>
-        <Stack padding='20px' justifyContent='space-evenly' flexDirection='row' color='white'>
-            <Stack fontSize='1px' alignItems='center'>
-                <Typography fontWeight='bold'>Návštevná adresa</Typography>
-                <Typography>Turá 123</Typography>
-                <Typography>PSČ: 935 51</Typography>
-            </Stack>
-            <Stack fontSize='1px' alignItems='center'>
-                <Typography fontWeight='bold'>Médiá</Typography>
-                <Link to="https://www.facebook.com/profile.php?id=100095276537413">
-                    <IconButton>
-                        <FacebookIcon sx={{color: 'white'}}/>
-                        <Typography color='white'>Facebook</Typography>
-                    </IconButton>
-                </Link>
-                <Link to="https://www.instagram.com/panthera_park/">
-                    <IconButton>
-                        <InstagramIcon sx={{color: 'white'}}/>
-                        <Typography color='white'>Instagram</Typography>
-                    </IconButton>
-                </Link>
+    return <footer>
+        <Stack textAlign='center' display='flex' width='100%' bgcolor='#442e1d'>
+            <Divider/>
+            <Stack padding='20px' justifyContent='space-evenly' flexDirection='row' color='white'>
+                <Stack fontSize='1px' alignItems='center'>
+                    <Typography fontWeight='bold'>Návštevná adresa</Typography>
+                    <Typography>Turá 123</Typography>
+                    <Typography>PSČ: 935 51</Typography>
+                </Stack>
+                <Stack fontSize='1px' alignItems='center'>
+                    <Typography fontWeight='bold'>Médiá</Typography>
+                    <Link to="https://www.facebook.com/profile.php?id=100095276537413">
+                        <IconButton>
+                            <FacebookIcon sx={{color: 'white'}}/>
+                            <Typography color='white'>Facebook</Typography>
+                        </IconButton>
+                    </Link>
+                    <Link to="https://www.instagram.com/panthera_park/">
+                        <IconButton>
+                            <InstagramIcon sx={{color: 'white'}}/>
+                            <Typography color='white'>Instagram</Typography>
+                        </IconButton>
+                    </Link>
+                </Stack>
             </Stack>
         </Stack>
-    </Stack>;
+    </footer>;
 }

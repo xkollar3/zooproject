@@ -11,12 +11,9 @@ interface LandingViewProps {
 export const LandingView: FC<LandingViewProps> = () => {
     return <Box
         sx={{
-            minHeight: '100vh',
-            overflow: 'hidden',
             paddingTop: '120px',
-            position: 'relative',
             width: '100%',
-            zIndex: '100',
+            height: '100%',
             "@media (max-width: 960px)" :  {
                 paddingBottom: 0,
                 paddingTop: 0
