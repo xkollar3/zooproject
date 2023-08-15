@@ -31,9 +31,7 @@ export const MainSection: FC = () => {
                 margin: 0,
                 padding: 0,
                 verticalAlign: 'baseline',
-                "@media (max-width: 560px)": {
-                },
-            }}>
+            }} marginTop={isMobile ? "50px" : "0"}>
                 <Typography paddingTop='18rem' fontWeight='bold' variant={isMobile ? 'h5' : 'h4'}>
                     Vítame Vás v Parku s najväčším množstvom mačkovitých šeliem v Európe!
                 </Typography>

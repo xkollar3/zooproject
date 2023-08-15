@@ -1,7 +1,17 @@
 version: "3.8"
 services:
   frontend:
-    build: ./frontend
-    container_name: panthera-frontend
+    build:
+      context: ./frontend  # Path to the frontend directory containing your Vite application
+      dockerfile: Dockerfile  # Dockerfile for the frontend Vite application
     ports:
-      - '3000:3000'
+      - "80:80"  # Expose Vite application on port 3000
+
+  nginx:
+    build:
+      context: ./deploy # Path to the directory containing your nginx configuration and built frontend files
+      dockerfile: Dockerfile  # Dockerfile for the nginx configuration
+    ports:
+      - "3000:3000"  # Expose nginx on port 80
+    depends_on:
+      - frontend  # Make sure frontend service is running before starting nginx
