@@ -17,9 +17,9 @@ export const MainSection: FC = () => {
         <Stack rowGap={1} alignItems='center'>
             <Box sx={{
                 width: '100%',
-                minHeight: '400px',
+                minHeight: '500px',
                 position: 'relative',
-                backgroundImage: `url(${Banner})`, // Set the Banner image as the background
+                background: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(${Banner})`, // Set the Banner image as the background
                 backgroundPosition: '50%',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -31,8 +31,8 @@ export const MainSection: FC = () => {
                 margin: 0,
                 padding: 0,
                 verticalAlign: 'baseline',
-            }} marginTop={isMobile ? "50px" : "0"}>
-                <Typography paddingTop='18rem' fontWeight='bold' variant={isMobile ? 'h5' : 'h4'}>
+            }} marginTop={isMobile ? "50px" : "0px"}>
+                <Typography paddingTop='22rem' fontWeight='bold' variant={isMobile ? 'h5' : 'h4'}>
                     Vítame Vás v Parku s najväčším množstvom mačkovitých šeliem v Európe!
                 </Typography>
             </Box>
