@@ -3,7 +3,7 @@ import {AppBar, IconButton, Stack, Typography, useMediaQuery} from "@mui/materia
 import MenuDrawer from "./MenuDrawer";
 import LanguageIcon from '@mui/icons-material/Language';
 import Logo from '../assets/logo.jpg'
-import Caption from '../assets/caption.jpg';
+import Caption from '../assets/caption.png';
 
 interface HeaderProps {
 
@@ -18,8 +18,8 @@ export const Header: FC<HeaderProps> = () => {
 
 const MobileHeader: FC = () => {
     return <AppBar>
-        <Stack alignItems='center' bgcolor="#f6efe3">
-            <img style={{width: '100%'}} alt='logo' src={Caption}/>
+        <Stack alignItems='center' bgcolor="#f6efe3" padding={1}>
+            <img style={{width: '85%'}} alt='logo' src={Caption}/>
             <Stack flexDirection='row' justifyContent='center' alignItems='center'>
                 <IconButton>
                     <Typography color='#442e1d' variant='h6'>Slovensky</Typography>

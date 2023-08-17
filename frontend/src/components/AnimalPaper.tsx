@@ -40,6 +40,7 @@ export const AnimalPaper: FC<AnimalPaperProps> = (animalPaperProps) => {
                             width: '100%',
                             height: '100%',
                             objectFit: 'cover',
+                            filter: 'brightness(80%)',
                         }}
                         src={animalPaperProps.animalFile}
                     />
