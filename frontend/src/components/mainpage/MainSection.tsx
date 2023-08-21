@@ -1,17 +1,30 @@
 import {FC} from "react";
 import {Box, Button, Stack, Typography, useMediaQuery} from "@mui/material";
-import Banner from "../assets/banner.jpg"
-import animals from "../assets/animal_cards.json";
-import {AnimalPaper} from "./AnimalPaper";
+import Banner from "../../assets/banner.jpg"
 import {useNavigate} from "react-router-dom";
+import {MainPagePost, MainPagePostProps} from "./MainPagePost";
+import posts from '../../assets/main_page_posts.json';
+import {SocialMediaSection} from "./SocialMediaSection";
+import {StatisticsAnimals} from "./StatisticsAnimals";
+
+const getPostByName = (name: string, reverse: boolean): MainPagePostProps => {
+    let post: { name: string; caption: string; text: string; imagePath: string } | undefined;
+    post = posts.find((param) => param !== undefined && param.name === name);
+    if (post === undefined) {
+        throw new Error('No post with name: ' + name + ' found');
+    }
+
+
+    return {text: post.text, imagePath: post.imagePath, caption: post.caption, reverse}
+}
+
+
 
 export const MainSection: FC = () => {
     const navigate = useNavigate();
 
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
-
-    const animalsToDisplay = isMobile ? animals.slice(0, 1) : animals.slice(0, 2);
 
     return <Box textAlign='center' bgcolor='#f6efe3'>
         <Stack rowGap={1} alignItems='center'>
@@ -31,28 +44,16 @@ export const MainSection: FC = () => {
                 margin: 0,
                 padding: 0,
                 verticalAlign: 'baseline',
-            }} marginTop={isMobile ? "50px" : "0px"}>
-                <Typography paddingTop='22rem' fontWeight='bold' variant={isMobile ? 'h5' : 'h4'}>
-                    Vítame Vás v Parku s najväčším množstvom mačkovitých šeliem v Európe!
+            }} marginTop={isMobile ? "50px" : "0px"}/>
+            <Box>
+                <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>
+                    Vitajte v parku s najväčším množstvom mačkovitých šeliem v Európe!
                 </Typography>
             </Box>
-            <Button onClick={() => navigate('/opening-hours')} sx={{
-                bgcolor: '#f8b957',
-                borderRadius: '30px',
-                color: 'black',
-                display: 'block',
-                fontWeight: '700',
-                minWidth: '243px',
-                padding: '18px 62px',
-                textAlign: 'center',
-            }}>Otváracie hodiny</Button>
-            <Typography fontWeight='bold' variant='h5' color='#b6490c'>Nájdete u nás:</Typography>
-            <Stack display="flex" flexDirection={isMobile ? "column" : "row"} justifyContent='center'>
-                {animalsToDisplay.map(animal => <AnimalPaper id={animal.id}
-                                                             key={animal.id}
-                                                             name={animal.name}
-                                                             shortDescription={animal.shortDescription}
-                                                             animalFile={animal.animalFile}/>)}
+            <StatisticsAnimals/>
+            <Stack width='100%' alignItems='center' margin='20px'>
+                <MainPagePost {...getPostByName('about', false)}/>
+                <MainPagePost {...getPostByName('zoo_description', true)}/>
             </Stack>
             <Button onClick={() => navigate('/animals')} sx={{
                 bgcolor: '#f8b957',
@@ -64,8 +65,8 @@ export const MainSection: FC = () => {
                 padding: '18px 62px',
                 textAlign: 'center',
                 marginBottom: '20px'
-            }}>Všetky zvieratá</Button>
+            }}>Prehľad zvierat</Button>
+            <SocialMediaSection/>
         </Stack>
-    </Box>
-        ;
+    </Box>;
 }

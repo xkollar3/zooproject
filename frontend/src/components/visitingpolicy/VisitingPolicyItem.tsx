@@ -1,0 +1,33 @@
+import {FC} from "react";
+import {Box, CardMedia, Stack, Typography, useMediaQuery} from "@mui/material";
+
+interface VisitingPolicyItemProps {
+    sk: string,
+    icon: string,
+    circular: boolean,
+    textColor: string,
+}
+
+export const VisitingPolicyItem: FC<VisitingPolicyItemProps> = (props: VisitingPolicyItemProps) => {
+    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
+        || theme.breakpoints.down("xs"));
+
+    return <Stack gap={2} direction='row' alignItems='center' justifyContent='flex-start'
+                  width='100%'>
+        <Box>
+            {
+                props.circular ?
+                    <CardMedia style={{borderRadius: '50%', width: '100px', height: '100px', objectFit: 'contain'}}
+                               component='img'
+                               alt='icon of item'
+                               src={props.icon}/> :
+                    <CardMedia style={{width: '100px', height: '100px', objectFit: 'contain'}} component='img'
+                               alt='icon of item'
+                               src={props.icon}/>
+            }
+        </Box>
+        <Box>
+            <Typography fontWeight='bold' color={props.textColor} align='left' variant={isMobile ? 'h6' : 'h5'}>{props.sk}</Typography>
+        </Box>
+    </Stack>;
+}

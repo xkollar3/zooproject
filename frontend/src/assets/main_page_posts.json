@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "about",
+    "caption": "O nás",
+    "text": "Náš park sa snaží poskytovať vzrušujúce zážitky pre návštevníkov všetkých vekových skupín. \n\nTaktiež ponúka rôzne zábavné aktivity pre deti, ako sú skákanie hrady, preliezky a kŕmenie zvierat. Máme tiež obchod so suvenírmi, kde si môžete kúpiť pamiatky zo svojej návštevy. Príďte a zažite nezabudnuteľný deň plný dobrodružstva!",
+    "imagePath": "/animal_about.jpg"
+  },
+  {
+    "name": "zoo_description",
+    "caption": "Niečo o našom parku",
+    "text": "Náš park je úžasné miesto, kde môžete objaviť rôzne druhy zvierat z celého sveta. Máme tu tigre, opice, zebry a mnoho ďalších fascinujúcich tvorov. Je to skvelé miesto na strávenie času s rodinou a možnosť naučiť sa viac o prírode. Nezabudnite si so sebou priniesť fotoaparát, aby ste zachytili nezabudnuteľné momenty s našimi zvieratami\uD83D\uDCF8",
+    "imagePath": "/zoo_description_animal.jpg"
+  }
+]

@@ -11,8 +11,11 @@ import {
     useMediaQuery,
 } from "@mui/material";
 import {ArrowBack, Menu} from "@mui/icons-material";
+import {useNavigate} from "react-router-dom";
 
 export default function MenuDrawer() {
+    const navigate = useNavigate();
+
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
@@ -57,7 +60,9 @@ export default function MenuDrawer() {
                     </ListItem>
                     <Divider/>
                     <ListItem>
-                        <ListItemText>Návštevnícky poriadok</ListItemText>
+                        <div onClick={() => navigate('/visiting-policy')}>
+                            <ListItemText>Návštevnícky poriadok</ListItemText>
+                        </div>
                     </ListItem>
                     <Divider/>
                 </List>
