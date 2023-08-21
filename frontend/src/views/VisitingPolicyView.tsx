@@ -1,14 +1,10 @@
 import {FC} from "react";
 import {Header} from "../components/Header";
-import {Box} from "@mui/material";
 import {FooterSection} from "../components/FooterSection";
-import {MainSection} from "../components/mainpage/MainSection";
+import {Box} from "@mui/material";
+import {VisitingPolicySection} from "../components/visitingpolicy/VisitingPolicySection";
 
-interface LandingViewProps {
-
-}
-
-export const LandingView: FC<LandingViewProps> = () => {
+export const VisitingPolicyView: FC = () => {
     return <Box
         sx={{
             paddingTop: '120px',
@@ -21,7 +17,7 @@ export const LandingView: FC<LandingViewProps> = () => {
         }}
     >
         <Header/>
-        <MainSection/>
+        <VisitingPolicySection/>
         <FooterSection/>
     </Box>
 }

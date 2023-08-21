@@ -34,12 +34,12 @@ const MobileHeader: FC = () => {
 
 const NormalHeader: FC = () => {
     return <AppBar position="absolute">
-        <Stack columnGap={8} flexDirection='row' justifyContent='center' alignItems='center' bgcolor="#f6efe3">
+        <Stack width='100%' minHeight='130px' columnGap={8} flexDirection='row' justifyContent='center' alignItems='center' bgcolor="#f6efe3">
             <IconButton>
                 <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
                 <LanguageIcon style={{color: 'black'}}/>
             </IconButton>
-            <img style={{width: '10%'}} alt='logo' src={Logo}/>
+            <img style={{width:'140px'}} alt='logo' src={Logo}/>
             <MenuDrawer/>
         </Stack>
     </AppBar>;

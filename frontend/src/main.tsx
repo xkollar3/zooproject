@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {LandingView} from "./views/LandingView";
 import {createTheme, ThemeProvider} from "@mui/material";
+import {VisitingPolicyView} from "./views/VisitingPolicyView";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <LandingView/>,
     },
+    {
+        path: "visiting-policy",
+        element: <VisitingPolicyView/>,
+    }
 ]);
 
 const theme = createTheme({
@@ -25,13 +30,12 @@ const theme = createTheme({
         },
         text: {
             primary: '#000000',
-            secondary: 'whitesmoke',
+            secondary: '#44321e',
         },
         background: {
             paper: '#b73337',
         },
         divider: '#442e1d',
-
     },
 
 });
