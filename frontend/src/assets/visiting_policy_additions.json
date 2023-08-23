@@ -1,9 +1,5 @@
 [
   {
-    "sk": "ZÁKAZ VSTUPU S DOMÁCIMI ZVIERATAMI",
-    "icon": "/policy_icons/no_own_animals_1.png"
-  },
-  {
     "sk": "POZOR! LÍSTOK JE PO VSTUPE DO AREÁLU JEDNORÁZOVÝ!",
     "icon": "/policy_icons/tickets.png"
   },
@@ -14,9 +10,5 @@
   {
     "sk": "PRÍSNY ZÁKAZ VSTUPU V KORČULIACH A NA BICYKLOCH",
     "icon": "/policy_icons/rollerblades.png"
-  },
-  {
-    "sk": "ZÁKAZ FAJČIŤ V CELOM AREÁLI",
-    "icon": "/policy_icons/no_smoking_1.png"
   }
 ]

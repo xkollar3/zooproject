@@ -1,0 +1,27 @@
+[
+  {
+    "sk" : "DOSPELÍ OD 18 ROKOV",
+    "skNote": "",
+    "price": 10
+  },
+  {
+    "sk" : "DETI OD 4 DO 15 ROKOV",
+    "skNote": "",
+    "price": 5
+  },
+  {
+    "sk": "ŠTUDENTSKÝ DO 26 ROKOV",
+    "skNote": "S PLATNÝM DOKLADOM O ŠTÚDIU, ISIC-ZVÝHODNENÁ CENA",
+    "price": 5
+  },
+  {
+    "sk": "DETI DO 3 ROKOV",
+    "skNote": "",
+    "price": 0
+  },
+  {
+    "sk": "DRŽITEĽIA PREUKAZU ZŤP",
+    "skNote": "PO PREDLOŽENÍ DOKLADU O ZŤP",
+    "price": 5
+  }
+]

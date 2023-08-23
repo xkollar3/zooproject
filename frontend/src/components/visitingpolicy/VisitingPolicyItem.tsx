@@ -13,7 +13,7 @@ export const VisitingPolicyItem: FC<VisitingPolicyItemProps> = (props: VisitingP
         || theme.breakpoints.down("xs"));
 
     return <Stack gap={2} direction='row' alignItems='center' justifyContent='flex-start'
-                  width='100%'>
+                  width='95%'>
         <Box>
             {
                 props.circular ?
@@ -27,7 +27,7 @@ export const VisitingPolicyItem: FC<VisitingPolicyItemProps> = (props: VisitingP
             }
         </Box>
         <Box>
-            <Typography fontWeight='bold' color={props.textColor} align='left' variant={isMobile ? 'h6' : 'h5'}>{props.sk}</Typography>
+            <Typography fontFamily='Bebas Neue, sans-serif' color={props.textColor} align='left' variant={isMobile ? 'h6' : 'h5'}>{props.sk}</Typography>
         </Box>
     </Stack>;
 }

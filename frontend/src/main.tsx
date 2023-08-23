@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {LandingView} from "./views/LandingView";
 import {createTheme, ThemeProvider} from "@mui/material";
 import {VisitingPolicyView} from "./views/VisitingPolicyView";
+import {FareView} from "./views/FareView";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     {
         path: "visiting-policy",
         element: <VisitingPolicyView/>,
+    },
+    {
+        path: 'fares',
+        element: <FareView/>
     }
 ]);
 

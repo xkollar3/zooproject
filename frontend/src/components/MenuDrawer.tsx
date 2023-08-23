@@ -44,19 +44,18 @@ export default function MenuDrawer() {
                     </ListItem>
                     <Divider/>
                     <ListItem>
-                        <ListItemText>Adresa</ListItemText>
+                        <ListItemText>Kontakt</ListItemText>
                     </ListItem>
                     <Divider/>
-                    <ListItem>
-                        <ListItemText>O nás</ListItemText>
-                    </ListItem>
                     <Divider/>
                     <ListItem>
                         <ListItemText>Zvieratá</ListItemText>
                     </ListItem>
                     <Divider/>
                     <ListItem>
-                        <ListItemText>Cenník</ListItemText>
+                        <div onClick={() => navigate('/fares')}>
+                            <ListItemText>Cenník</ListItemText>
+                        </div>
                     </ListItem>
                     <Divider/>
                     <ListItem>
