@@ -9,14 +9,16 @@ export const StatisticsAnimals: FC = () => {
                justifyContent='flex-end'>
             <CardMedia style={{height: '100%', objectFit: 'contain'}} component='img' alt='kangaroo silhoutte'
                        src={kangaroo}/>
-            <Typography variant='h6'>TEXT TEXT TEXT</Typography>
-            <Typography fontWeight='bold' variant='h5'>BOLD TEXT</Typography>
+            <Typography variant='h6'>Viac ako</Typography>
+            <Typography fontWeight='1000' variant='h5'>85</Typography>
+            <Typography variant='h6'>Druhov</Typography>
         </Stack>
         <Stack margin='10px' height='12rem' width='50%' direction='column' alignItems='center'
                justifyContent='flex-end'>
             <CardMedia style={{height: '100%', objectFit: 'contain'}} component='img' alt='cat silhoutte' src={cat}/>
-            <Typography variant='h6'>TEXT TEXT TEXT</Typography>
-            <Typography fontWeight='bold' variant='h5'>BOLD TEXT</Typography>
+            <Typography variant='h6'>Viac ako</Typography>
+            <Typography fontWeight='1000' variant='h5'>500</Typography>
+            <Typography variant='h6'>Jedincov</Typography>
         </Stack>
     </Stack>
 }
