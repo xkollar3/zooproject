@@ -1,14 +1,10 @@
 import {FC, useEffect} from "react";
-import {Header} from "../components/Header";
+import {Header} from "../components/common/Header";
 import {Box, useMediaQuery} from "@mui/material";
-import {FooterSection} from "../components/FooterSection";
+import {FooterSection} from "../components/common/FooterSection";
 import {MainSection} from "../components/mainpage/MainSection";
 
-interface LandingViewProps {
-
-}
-
-export const LandingView: FC<LandingViewProps> = () => {
+export const LandingView: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 

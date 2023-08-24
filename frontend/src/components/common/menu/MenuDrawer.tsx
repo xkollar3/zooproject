@@ -1,21 +1,9 @@
 import {useState} from "react";
-import {
-    Divider,
-    Drawer,
-    IconButton,
-    List,
-    ListItem,
-    ListItemText,
-    Stack,
-    Typography,
-    useMediaQuery,
-} from "@mui/material";
+import {Divider, Drawer, IconButton, List, Stack, Typography, useMediaQuery,} from "@mui/material";
 import {ArrowBack, Menu} from "@mui/icons-material";
-import {useNavigate} from "react-router-dom";
+import {MenuDrawerItem} from "./MenuDrawerItem";
 
 export default function MenuDrawer() {
-    const navigate = useNavigate();
-
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
@@ -39,33 +27,19 @@ export default function MenuDrawer() {
                     <IconButton onClick={() => setIsDrawerOpen(false)}>
                         <ArrowBack/>
                     </IconButton>
-                    <ListItem>
-                        <ListItemText>Otváracie hodiny</ListItemText>
-                    </ListItem>
+                    <MenuDrawerItem name={'Otváracie hodiny'} location={'/opening-hours'} key={'openingHours'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <ListItem>
-                        <ListItemText>Kontakt</ListItemText>
-                    </ListItem>
+                    <MenuDrawerItem name={'Kontakt'} location={'/contact'} key={'contact'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
+                    <MenuDrawerItem name={'Zvieratá'} location={'/animals'} key={'animals'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <ListItem>
-                        <ListItemText>Zvieratá</ListItemText>
-                    </ListItem>
+                    <MenuDrawerItem name={'Cenník'} location={'/fares'} key={'fares'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <ListItem>
-                        <div onClick={() => navigate('/fares')}>
-                            <ListItemText>Cenník</ListItemText>
-                        </div>
-                    </ListItem>
-                    <Divider/>
-                    <ListItem>
-                        <div onClick={() => navigate('/visiting-policy')}>
-                            <ListItemText>Návštevnícky poriadok</ListItemText>
-                        </div>
-                    </ListItem>
+                    <MenuDrawerItem name={'Návštevný poriadok'} location={'/visiting-policy'} key={'visitingPolicy'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
                 </List>
             </Stack>
         </Drawer>
-    </>;
+    </>
+        ;
 }

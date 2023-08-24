@@ -1,8 +1,8 @@
 import {FC, useEffect} from "react";
-import {Header} from "../components/Header";
-import {FooterSection} from "../components/FooterSection";
 import {Box, useMediaQuery} from "@mui/material";
 import {VisitingPolicySection} from "../components/visitingpolicy/VisitingPolicySection";
+import {Header} from "../components/common/Header";
+import {FooterSection} from "../components/common/FooterSection";
 
 export const VisitingPolicyView: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")

@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {Box, CardMedia, Divider, Stack, Typography, useMediaQuery} from "@mui/material";
-import FooterLogo from '../assets/footer_logo.jpg';
+import FooterLogo from '../../assets/footer_logo.jpg';
 
 export const FooterSection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
