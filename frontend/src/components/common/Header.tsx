@@ -1,9 +1,9 @@
 import {FC} from "react";
-import {AppBar, IconButton, Stack, Typography, useMediaQuery} from "@mui/material";
-import MenuDrawer from "./MenuDrawer";
+import {AppBar, Button, IconButton, Stack, Typography, useMediaQuery} from "@mui/material";
+import MenuDrawer from "./menu/MenuDrawer";
 import LanguageIcon from '@mui/icons-material/Language';
-import Logo from '../assets/logo.jpg'
-import Caption from '../assets/caption.png';
+import Logo from '../../assets/logo.jpg'
+import Caption from '../../assets/caption.png';
 import {useNavigate} from "react-router-dom";
 
 interface HeaderProps {
@@ -26,7 +26,9 @@ const MobileHeader: FC = () => {
 
     return <AppBar>
         <Stack alignItems='center' bgcolor="#f6efe3" padding={1}>
-            <img onClick={imageClick} style={{width: '85%'}} alt='logo' src={Caption}/>
+            <Button onClick={imageClick}>
+                <img style={{width: '85%'}} alt='logo' src={Caption}/>
+            </Button>
             <Stack flexDirection='row' justifyContent='center' alignItems='center'>
                 <IconButton>
                     <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
@@ -47,12 +49,15 @@ const NormalHeader: FC = () => {
     }
 
     return <AppBar position="absolute">
-        <Stack width='100%' minHeight='130px' columnGap={8} flexDirection='row' justifyContent='center' alignItems='center' bgcolor="#f6efe3">
+        <Stack width='100%' minHeight='130px' columnGap={8} flexDirection='row' justifyContent='center'
+               alignItems='center' bgcolor="#f6efe3">
             <IconButton>
                 <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
                 <LanguageIcon style={{color: 'black'}}/>
             </IconButton>
-            <img onClick={imageClick} style={{width:'140px'}} alt='logo' src={Logo}/>
+            <Button onClick={imageClick}>
+                <img onClick={imageClick} style={{width: '140px'}} alt='logo' src={Logo}/>
+            </Button>
             <MenuDrawer/>
         </Stack>
     </AppBar>;

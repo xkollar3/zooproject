@@ -1,15 +1,15 @@
-import {Box, useMediaQuery} from "@mui/material";
 import {FC, useEffect} from "react";
-import {FareSection} from "../components/fare/FareSection";
+import {Box, useMediaQuery} from "@mui/material";
 import {Header} from "../components/common/Header";
 import {FooterSection} from "../components/common/FooterSection";
+import {ContactSection} from "../components/contact/ContactSection";
 
-export const FareView: FC = () => {
+export const ContactView: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
     useEffect(() => {
-        document.title = 'Cenník'
+        document.title = 'Kontakt'
     }, [])
 
     return<Box
@@ -20,7 +20,7 @@ export const FareView: FC = () => {
         }}
     >
         <Header/>
-        <FareSection/>
+        <ContactSection/>
         <FooterSection/>
     </Box>;
 }
