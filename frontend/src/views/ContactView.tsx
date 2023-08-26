@@ -1,12 +1,11 @@
 import {FC, useEffect} from "react";
 import {Box, useMediaQuery} from "@mui/material";
 import {Header} from "../components/common/Header";
-import {FooterSection} from "../components/common/FooterSection";
+import {FooterSection, FooterSectionMobileContact} from "../components/common/FooterSection";
 import {ContactSection} from "../components/contact/ContactSection";
 
 export const ContactView: FC = () => {
-    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
-        || theme.breakpoints.down("xs"));
+    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm"));
 
     useEffect(() => {
         document.title = 'Kontakt'
@@ -21,6 +20,6 @@ export const ContactView: FC = () => {
     >
         <Header/>
         <ContactSection/>
-        <FooterSection/>
+        {isMobile ? <FooterSectionMobileContact /> : <FooterSection/>}
     </Box>;
 }

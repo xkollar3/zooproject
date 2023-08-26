@@ -32,7 +32,7 @@ export const VisitingPolicySection: FC = () => {
                 </Typography>
             </Stack>
             <Stack rowGap={2} padding='20px' bgcolor='#44321e' direction='column' alignItems='center'>
-                {policy.map((policy) => <VisitingPolicyItem {...policy} circular={true} textColor='#f6efe3'/>)}
+            {policy.map((policy) => <VisitingPolicyItem {...policy} circular={true} textColor='#f6efe3'/>)}
             </Stack>
             <Stack rowGap={2} padding='20px' bgcolor='#f8ba57' direction='column' alignItems='center'>
                 {policyAdditional.map((policy) => <VisitingPolicyItem {...policy} circular={false}

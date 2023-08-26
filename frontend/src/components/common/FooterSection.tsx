@@ -55,3 +55,16 @@ const FooterSectionMobile: FC = () => {
     </footer>;
 }
 
+export const FooterSectionMobileContact: FC = () => {
+    return <footer>
+        <Stack display='flex' flexDirection='column' textAlign='center' width='100%' bgcolor='#44321e'>
+            <Divider/>
+            <Stack rowGap={5} padding='20px' justifyContent='space-evenly' flexDirection='column' color='white'>
+                <Box width='100%'>
+                    <CardMedia component='img' alt='logo_reduced' src={FooterLogo}/>
+                </Box>
+            </Stack>
+        </Stack>
+    </footer>;
+}
+
