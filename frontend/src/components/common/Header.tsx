@@ -6,11 +6,7 @@ import Logo from '../../assets/logo.jpg'
 import Caption from '../../assets/caption.png';
 import {useNavigate} from "react-router-dom";
 
-interface HeaderProps {
-
-}
-
-export const Header: FC<HeaderProps> = () => {
+export const Header: FC= () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
@@ -25,9 +21,9 @@ const MobileHeader: FC = () => {
     }
 
     return <AppBar>
-        <Stack alignItems='center' bgcolor="#f6efe3" padding={1}>
+        <Stack height='100px' justifyContent='center' alignItems='center' bgcolor="#f6efe3" padding={1}>
             <Button onClick={imageClick}>
-                <img style={{width: '85%'}} alt='logo' src={Caption}/>
+                <img style={{width: '85%'}} alt='Panthera park logo' src={Caption}/>
             </Button>
             <Stack flexDirection='row' justifyContent='center' alignItems='center'>
                 <IconButton>
@@ -49,14 +45,14 @@ const NormalHeader: FC = () => {
     }
 
     return <AppBar position="absolute">
-        <Stack width='100%' minHeight='130px' columnGap={8} flexDirection='row' justifyContent='center'
+        <Stack width='100%' height='130px' columnGap={8} flexDirection='row' justifyContent='center'
                alignItems='center' bgcolor="#f6efe3">
             <IconButton>
                 <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
                 <LanguageIcon style={{color: 'black'}}/>
             </IconButton>
             <Button onClick={imageClick}>
-                <img onClick={imageClick} style={{width: '140px'}} alt='logo' src={Logo}/>
+                <img onClick={imageClick} style={{width: '140px'}} alt='Panthera park logo' src={Logo}/>
             </Button>
             <MenuDrawer/>
         </Stack>

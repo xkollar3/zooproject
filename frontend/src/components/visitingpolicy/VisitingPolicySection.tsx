@@ -27,7 +27,7 @@ export const VisitingPolicySection: FC = () => {
                     vyhradeným jedlom), pretože ich strava je starostlivo kontrolovaná.
                 </Typography>
                 <Typography fontSize='18px'>
-                    Ak máte nejaké ďalšie otázky týkajúce sa bezpečnosti, neváhajte sa opýtať personálu parku. Dúfame, že
+                    Ak máte nejaké ďalšie otázky týkajúce sa bezpečnosti, kontaktujte prosím personál. Dúfame, že
                     si užijete svoju návštevu!
                 </Typography>
             </Stack>

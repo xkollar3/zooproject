@@ -13,7 +13,7 @@ export const OpeningHoursView: FC = () => {
     }, [])
 
     return<Box
-        paddingTop={isMobile ? '0px' : '120px'}
+        paddingTop={isMobile ? '100px' : '120px'}
         sx={{
             width: '100%',
             height: '100%'
