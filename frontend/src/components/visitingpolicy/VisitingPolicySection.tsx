@@ -9,8 +9,7 @@ export const VisitingPolicySection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
-    return <Box display='flex' bgcolor='#f6efe3' padding={isMobile ? '0px' : '50px'} alignItems='center'
-                paddingTop={isMobile ? '100px' : '50px'} flexDirection='column' rowGap={0} position='relative'>
+    return <Box display='flex' bgcolor='#f6efe3' padding={isMobile ? '0px' : '50px'} alignItems='center' flexDirection='column' rowGap={0} position='relative'>
         <Box rowGap={0} style={{paddingRight: 0, paddingLeft: 0, maxWidth: '950px'}} >
             <Typography color='#44321e' fontFamily='Anton, sans-serif' align='center' marginBottom='20px'
                         variant={isMobile ? 'h5' : 'h3'}>Základné bezpečnostné pokyny</Typography>
@@ -32,11 +31,11 @@ export const VisitingPolicySection: FC = () => {
                 </Typography>
             </Stack>
             <Stack rowGap={2} padding='20px' bgcolor='#44321e' direction='column' alignItems='center'>
-            {policy.map((policy) => <VisitingPolicyItem {...policy} circular={true} textColor='#f6efe3'/>)}
+            {policy.map((policy) => <VisitingPolicyItem {...policy} circular={true} textColor='#f6efe3' key={policy.icon}/>)}
             </Stack>
             <Stack rowGap={2} padding='20px' bgcolor='#f8ba57' direction='column' alignItems='center'>
                 {policyAdditional.map((policy) => <VisitingPolicyItem {...policy} circular={false}
-                                                                      textColor='#44321e'/>)}
+                                                                      textColor='#44321e' key={policy.icon}/>)}
             </Stack>
             {!isMobile && window.innerWidth > 950 && <Box sx={{
                 position: 'absolute',

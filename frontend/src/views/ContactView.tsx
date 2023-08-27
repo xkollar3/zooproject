@@ -12,11 +12,12 @@ export const ContactView: FC = () => {
     }, [])
 
     return<Box
-        paddingTop={isMobile ? '0px' : '120px'}
+        paddingTop={isMobile ? '130px' : '120px'}
         sx={{
             width: '100%',
             height: '100%'
         }}
+        bgcolor='#f6efe3'
     >
         <Header/>
         <ContactSection/>

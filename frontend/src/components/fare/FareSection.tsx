@@ -10,8 +10,8 @@ export const FareSection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
-    return <Box display='flex' bgcolor='#f6efe3' alignItems='center' paddingBottom={isMobile ? '0px' : '50px'}
-                paddingTop={isMobile ? '100px' : '50px'} flexDirection='column' rowGap={2} position='relative'>
+    return <Box display='flex' bgcolor='#f6efe3' alignItems='center' paddingBottom='20px'
+                paddingTop='20px' flexDirection='column' rowGap={2} position='relative'>
         {!isMobile && <Box style={{
             position: 'absolute',
             bottom: '0',
@@ -36,7 +36,7 @@ export const FareSection: FC = () => {
                         height: '100%'
                     }}/>
                 </Box>
-                {fares.map((fare) => <FareItem {...fare} textColor='#44321e'/>)}
+                {fares.map((fare, index) => <FareItem key={index} {...fare} textColor='#44321e'/>)}
                 <Stack flexDirection='row'>
                     <Box width={isMobile ? '50px' : '75px'} height={isMobile ? '50px' : '75px'}>
                         <CardMedia component='img' alt='Exclamation mark icon' src={exclamationIcon}/>
