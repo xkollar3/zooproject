@@ -5,7 +5,6 @@ import {useNavigate} from "react-router-dom";
 interface MenuDrawerItemProps {
     name: string,
     location: string,
-    key: string,
     setIsDrawerOpen: Dispatch<boolean>,
 }
 
@@ -24,8 +23,7 @@ export const MenuDrawerItem: FC<MenuDrawerItemProps> = (props: MenuDrawerItemPro
     }
 
 
-    return <ListItemButton key={props.key}
-                           style={listItemStyle}
+    return <ListItemButton style={listItemStyle}
                            onMouseEnter={() => setIsHovered(true)}
                            onMouseLeave={() => setIsHovered(false)}
                            onClick={handleClick}>

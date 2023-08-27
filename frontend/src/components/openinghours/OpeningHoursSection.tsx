@@ -8,8 +8,8 @@ export const OpeningHoursSection: FC = () => {
 
     return <Box bgcolor='#f6efe3' width='100%' minHeight='600px' display='flex'
                 justifyContent='center' alignItems='center'
-                paddingTop='40px'
-                paddingBottom='40px'
+                paddingTop='20px'
+                paddingBottom='20px'
                 flexDirection='column'
                 >
         <Typography color='#44321e' fontFamily='Anton, sans-serif' align='center' marginBottom='20px'
