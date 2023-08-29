@@ -12,8 +12,8 @@ export const CatalogueView: FC = () => {
         document.title = 'Zvieratá'
     }, [])
 
-    return<Box
-        paddingTop={isMobile ? '130px' : '120px'}
+    return <Box
+        paddingTop={isMobile ? '130px' : '150px'}
         sx={{
             width: '100%',
             height: '100%'

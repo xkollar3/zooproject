@@ -44,7 +44,7 @@ export const MainSection: FC = () => {
                 margin: 0,
                 padding: 0,
                 verticalAlign: 'baseline',
-            }} marginTop={isMobile ? "50px" : "0px"}/>
+            }} marginTop={isMobile ? "20px" : "0px"}/>
             <Box>
                 <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>
                     Vitajte v parku s najväčším množstvom mačkovitých šeliem v Európe!
