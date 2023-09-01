@@ -4,7 +4,8 @@ import {CatalogueItem} from "./CatalogueItem";
 
 interface Animal {
     type: string,
-    name: string
+    name: string,
+    path: string
 }
 
 interface CataloguePageProps {
@@ -17,6 +18,6 @@ export const CataloguePage: FC<CataloguePageProps> = (props: CataloguePageProps)
     return <Stack gap={2} flexDirection='row' maxWidth='1000px' flexWrap='wrap' justifyContent='center'>
         {props.animals
             .slice(props.page * props.pageSize, (props.page + 1) * props.pageSize)
-            .map((animal, index) => <CatalogueItem key={index} {...animal} index={props.page * props.pageSize + index}/>)}
+            .map((animal, index) => <CatalogueItem key={index} {...animal}/>)}
     </Stack>
 }

@@ -1,78 +1,132 @@
 [
-    {
-        "type": "Lemur Kata",
-        "name": "Bibi & spol."
-    },
-    {
-        "type": "Zebra Stepná",
-        "name": "Tango a Zeo"
-    },
-    {
-        "type": "Ada Modro-žltá",
-        "name": "Abu & spol."
-    },
-    {
-        "type": "Malpa Hnedá",
-        "name": "Kiki  & spol."
-    },
-    {
-        "type": "Leopard Škvrnitý (melanistická forma)",
-        "name": "Donna & spol."
-    },
-    {
-        "type": "Rys Kanadský",
-        "name": "Shaq & spol."
-    },
-    {
-        "type": "Pštros africký",
-        "name": "Petey & spol."
-    },
-    {
-        "type": "Jagúar Americký",
-        "name": "Amaris & Nita + spol."
-    },
-    {
-        "type": "Somár domáci",
-        "name": "Tima"
-    },
-    {
-        "type": "Rys Karakal",
-        "name": "Maya & spol."
-    },
-    {
-        "type": "Vydra Malá",
-        "name": "Skye & spol."
-    },
-    {
-        "type": "Mačka Bengálska",
-        "name": "Nala & spol."
-    },
-    {
-        "type": "Mangusta Líščia",
-        "name": "Amari"
-    },
-    {
-        "type": "Leopard obláčikový",
-        "name": "Vicky & Teo"
-    },
-    {
-        "type": "Karakara červenobruchá",
-        "name": "Dino & Dita"
-    },
-    {
-        "type": "Ladniak krátkochvostý",
-        "name": "Amari& Allie"
-    },
-    {
-        "type": "Kakadu biely",
-        "name": "Ónyx & Daffy"
-    },
-    {
-        "type": "Kapybara",
-        "name": "Sasha & Sonya + spol."
-    },
-    {
-        "type": "Serval Stepny",
-        "name": "Jozef"
-    }
+  {
+    "type": "Lemur Kata",
+    "name": "Bibi & spol.",
+    "path": "lemur_kata.jpg"
+  },
+  {
+    "type": "Zebra Stepná",
+    "name": "Tango a Zeo",
+    "path": "zebra_stepna.jpg"
+  },
+  {
+    "type": "Ara Modro-žltá",
+    "name": "Abu & spol.",
+    "path": "ara_modro_zlta.jpg"
+  },
+  {
+    "type": "Malpa Hnedá",
+    "name": "Kiki  & spol.",
+    "path": "malpa_hneda.jpg"
+  },
+  {
+    "type": "Leopard Škvrnitý ( melanistická forma)",
+    "name": "Donna & spol.",
+    "path": "leopard_skvrnity.jpg"
+  },
+  {
+    "type": "Rys Kanadský",
+    "name": "Shaq & spol.",
+    "path": "rys_kanadsky.jpg"
+  },
+  {
+    "type": "Pštros africký",
+    "name": "Petey & spol.",
+    "path": "pstros_africky.jpg"
+  },
+  {
+    "type": "Jagúar Americký",
+    "name": "Amaris & Nita + spol.",
+    "path": "jaguar_americky.jpg"
+  },
+  {
+    "type": "Somár domáci",
+    "name": "Tima",
+    "path": "somar_domaci.jpg"
+  },
+  {
+    "type": "Rys Karakal",
+    "name": "Maya & spol.",
+    "path": "rys_karakal.jpg"
+  },
+  {
+    "type": "Vydra Malá",
+    "name": "Skye & spol.",
+    "path": "vydra_mala.jpg"
+  },
+  {
+    "type": "Mačka Bengálska",
+    "name": "Nala & spol.",
+    "path": "macka_bengalska.jpg"
+  },
+  {
+    "type": "Mangusta Líščia",
+    "name": "Amari",
+    "path": "mangusta_liscia.jpg"
+  },
+  {
+    "type": "Leopard obláčikový",
+    "name": "Vicky & Teo",
+    "path": "leopard_oblackovy.jpg"
+  },
+  {
+    "type": "Karakara červenobruchá",
+    "name": "Dino & Dita",
+    "path": "karakara_cervenobrucha.jpg"
+  },
+  {
+    "type": "Ladniak krátkochvostý",
+    "name": "Amari& Allie",
+    "path": "ladniak.jpg"
+  },
+  {
+    "type": "Kakadu biely",
+    "name": "Ónyx & Daffy",
+    "path": "kakadu.jpg"
+  },
+  {
+    "type": "Kapybara",
+    "name": "Sasha & Sonya + spol.",
+    "path": "kapybara.jpg"
+  },
+  {
+    "type": "Serval Stepný",
+    "name": "Amy",
+    "path": "serval.jpg"
+  },
+  {
+    "type": "Ženetka Škvrnitá",
+    "name": "Kulu",
+    "path": "zenetka.jpg"
+  },
+  {
+    "type": "Saimiri Vevericovitý",
+    "name": "",
+    "path": "saimiri.jpg"
+  },
+  {
+    "type": "Korela",
+    "name": "Uru & spol.",
+    "path": "korela.jpg"
+  },
+  {
+    "type": "Vodarka Jeleňovitá",
+    "name": "Fina, Lea & Adi",
+    "path": "vodarka.jpg"
+  },
+  {
+    "type": "Lidla Fenek",
+    "name": "Sanya & spol.",
+    "path": "lidla.jpg"
+  },
+  {
+    "type": "Myšiak Kráľovsky",
+    "name": "",
+    "path": "mysiak.jpg"
+  },
+  {
+    "type": "Lev Pustovy",
+    "name": "Tatu & spol.",
+    "path": "lev_pustovy.jpg"
+  }
 ]

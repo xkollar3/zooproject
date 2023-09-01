@@ -4,7 +4,7 @@ import {Box, CardMedia, Divider, Stack, Typography, useMediaQuery} from "@mui/ma
 interface CatalogueItemProps {
     type: string,
     name: string,
-    index: number
+    path: string
 }
 
 export const CatalogueItem: FC<CatalogueItemProps> = (props: CatalogueItemProps) => {
@@ -28,7 +28,7 @@ export const CatalogueItem: FC<CatalogueItemProps> = (props: CatalogueItemProps)
                 onMouseLeave={() => setIsHovered(false)}>
         <Stack width='100%' height='100%' flexDirection='column' alignItems='center'>
             <CardMedia style={imageStyle} component='img' alt={'Picture of ' + props.type}
-                       src={'/animals/' + (props.index + 1) + '.jpg'}/>
+                       src={'/animals/' + props.path}/>
             <Stack width='100%' height='100%' alignItems='center' justifyContent='center'>
                 <Typography align='center' variant='h5'>{props.type}</Typography>
                 <Divider style={{width: '90%'}}/>
