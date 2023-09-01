@@ -30,7 +30,7 @@ export const CatalogueSection: FC = () => {
 
     return <Box minHeight='600px' flexDirection='column' display='flex' justifyContent='center' alignItems='center'>
         <CataloguePage animals={animals} page={page} pageSize={pageSize}/>
-        <Stack flexDirection='row' alignItems='center' gap={2}>
+        <Stack flexDirection='row' alignItems='center' gap={2} marginTop='10px' marginBottom='10px'>
             <IconButton onClick={handleClickDown}>
                 <ArrowBackIosNewIcon style={{color: 'black'}}/>
             </IconButton>
