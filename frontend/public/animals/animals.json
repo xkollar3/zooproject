@@ -1,132 +1,132 @@
 [
   {
-    "type": "Lemur Kata",
     "name": "Bibi & spol.",
-    "path": "lemur_kata.jpg"
+    "path": "lemur_kata.jpg",
+    "phrase": "TheKataLemur"
   },
   {
-    "type": "Zebra Stepná",
     "name": "Tango a Zeo",
-    "path": "zebra_stepna.jpg"
+    "path": "zebra_stepna.jpg",
+    "phrase": "TheSteppeZebra"
   },
   {
-    "type": "Ara Modro-žltá",
     "name": "Abu & spol.",
-    "path": "ara_modro_zlta.jpg"
+    "path": "ara_modro_zlta.jpg",
+    "phrase": "TheBlueAndYellowAra"
   },
   {
-    "type": "Malpa Hnedá",
     "name": "Kiki  & spol.",
-    "path": "malpa_hneda.jpg"
+    "path": "malpa_hneda.jpg",
+    "phrase": "TheBrownMonkey"
   },
   {
-    "type": "Leopard Škvrnitý ( melanistická forma)",
     "name": "Donna & spol.",
-    "path": "leopard_skvrnity.jpg"
+    "path": "leopard_skvrnity.jpg",
+    "phrase": "TheSpottedLeopardMelanisticForm"
   },
   {
-    "type": "Rys Kanadský",
     "name": "Shaq & spol.",
-    "path": "rys_kanadsky.jpg"
+    "path": "rys_kanadsky.jpg",
+    "phrase": "TheCanadianLynx"
   },
   {
-    "type": "Pštros africký",
     "name": "Petey & spol.",
-    "path": "pstros_africky.jpg"
+    "path": "pstros_africky.jpg",
+    "phrase": "TheAfricanOstrich"
   },
   {
-    "type": "Jagúar Americký",
     "name": "Amaris & Nita + spol.",
-    "path": "jaguar_americky.jpg"
+    "path": "jaguar_americky.jpg",
+    "phrase": "TheAmericanJaguar"
   },
   {
-    "type": "Somár domáci",
     "name": "Tima",
-    "path": "somar_domaci.jpg"
+    "path": "somar_domaci.jpg",
+    "phrase": "TheDomesticDonkey"
   },
   {
-    "type": "Rys Karakal",
     "name": "Maya & spol.",
-    "path": "rys_karakal.jpg"
+    "path": "rys_karakal.jpg",
+    "phrase": "TheCaracalLynx"
   },
   {
-    "type": "Vydra Malá",
     "name": "Skye & spol.",
-    "path": "vydra_mala.jpg"
+    "path": "vydra_mala.jpg",
+    "phrase": "TheSmallOtter"
   },
   {
-    "type": "Mačka Bengálska",
     "name": "Nala & spol.",
-    "path": "macka_bengalska.jpg"
+    "path": "macka_bengalska.jpg",
+    "phrase": "TheBengalCat"
   },
   {
-    "type": "Mangusta Líščia",
     "name": "Amari",
-    "path": "mangusta_liscia.jpg"
+    "path": "mangusta_liscia.jpg",
+    "phrase": "TheFoxMongoose"
   },
   {
-    "type": "Leopard obláčikový",
     "name": "Vicky & Teo",
-    "path": "leopard_oblackovy.jpg"
+    "path": "leopard_oblackovy.jpg",
+    "phrase": "TheCloudedLeopard"
   },
   {
-    "type": "Karakara červenobruchá",
     "name": "Dino & Dita",
-    "path": "karakara_cervenobrucha.jpg"
+    "path": "karakara_cervenobrucha.jpg",
+    "phrase": "TheRedBelliedCaracara"
   },
   {
-    "type": "Ladniak krátkochvostý",
     "name": "Amari& Allie",
-    "path": "ladniak.jpg"
+    "path": "ladniak.jpg",
+    "phrase": "TheShortTailedLidia"
   },
   {
-    "type": "Kakadu biely",
     "name": "Ónyx & Daffy",
-    "path": "kakadu.jpg"
+    "path": "kakadu.jpg",
+    "phrase": "TheWhiteCockatoo"
   },
   {
-    "type": "Kapybara",
     "name": "Sasha & Sonya + spol.",
-    "path": "kapybara.jpg"
+    "path": "kapybara.jpg",
+    "phrase": "TheCapybara"
   },
   {
-    "type": "Serval Stepný",
     "name": "Amy",
-    "path": "serval.jpg"
+    "path": "serval.jpg",
+    "phrase": "TheSteppeServal"
   },
   {
-    "type": "Ženetka Škvrnitá",
     "name": "Kulu",
-    "path": "zenetka.jpg"
+    "path": "zenetka.jpg",
+    "phrase": "TheSpottedGenet"
   },
   {
-    "type": "Saimiri Vevericovitý",
     "name": "",
-    "path": "saimiri.jpg"
+    "path": "saimiri.jpg",
+    "phrase": "TheSquirrelMonkey"
   },
   {
-    "type": "Korela",
     "name": "Uru & spol.",
-    "path": "korela.jpg"
+    "path": "korela.jpg",
+    "phrase": "TheConureParrot"
   },
   {
-    "type": "Vodarka Jeleňovitá",
     "name": "Fina, Lea & Adi",
-    "path": "vodarka.jpg"
+    "path": "vodarka.jpg",
+    "phrase": "TheWaterDeer"
   },
   {
-    "type": "Lidla Fenek",
     "name": "Sanya & spol.",
-    "path": "lidla.jpg"
+    "path": "lidla.jpg",
+    "phrase": "TheFennecFox"
   },
   {
-    "type": "Myšiak Kráľovsky",
     "name": "",
-    "path": "mysiak.jpg"
+    "path": "mysiak.jpg",
+    "phrase": "TheRoyalMouse"
   },
   {
-    "type": "Lev Pustovy",
     "name": "Tatu & spol.",
-    "path": "lev_pustovy.jpg"
+    "path": "lev_pustovy.jpg",
+    "phrase": "TheDesertLion"
   }
 ]

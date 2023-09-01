@@ -1,14 +1,14 @@
 [
   {
-    "sk": "POZOR! LÍSTOK JE PO VSTUPE DO AREÁLU JEDNORÁZOVÝ!",
+    "phrase": "TicketOneTime",
     "icon": "/policy_icons/tickets.png"
   },
   {
-    "sk": "PROSÍME RODINY S ĎETMI, ABY SA ZDRŽIAVALI V SKUPINE PRED TERMINÁLOM",
+    "phrase": "FamilyWarning",
     "icon": "/policy_icons/family.png"
   },
   {
-    "sk": "PRÍSNY ZÁKAZ VSTUPU V KORČULIACH, NA BICYKLOCH, KOLOBEŽKÁCH A EL. KOLOBEŽKÁCH",
+    "phrase": "NoTransportationDevices",
     "icon": "/policy_icons/rollerblades.png"
   }
 ]

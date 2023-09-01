@@ -5,8 +5,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 import Logo from '../../assets/logo.jpg'
 import Caption from '../../assets/caption.png';
 import {useNavigate} from "react-router-dom";
+import {useRecoilState, useRecoilValue} from "recoil";
+import {getNextLanguage, Lang, langAtom, langName} from "../../localization/lang";
 
-export const Header: FC= () => {
+export const Header: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
@@ -15,6 +17,12 @@ export const Header: FC= () => {
 
 const MobileHeader: FC = () => {
     const navigate = useNavigate();
+    const [lang, setLang] = useRecoilState<Lang>(langAtom);
+    const languageName: string = useRecoilValue(langName);
+
+    const handleLangClick = () => {
+        setLang(getNextLanguage(lang));
+    }
 
     const imageClick = () => {
         navigate('/');
@@ -26,8 +34,8 @@ const MobileHeader: FC = () => {
                 <img style={{width: '85%'}} alt='Panthera park logo' src={Caption}/>
             </Button>
             <Stack flexDirection='row' justifyContent='center' alignItems='center'>
-                <IconButton>
-                    <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
+                <IconButton onClick={handleLangClick}>
+                    <Typography color='#442e1d' variant='h6'>{languageName}</Typography>
                     <LanguageIcon style={{color: 'black'}}/>
                 </IconButton>
                 <MenuDrawer/>
@@ -39,6 +47,12 @@ const MobileHeader: FC = () => {
 
 const NormalHeader: FC = () => {
     const navigate = useNavigate();
+    const [lang, setLang] = useRecoilState<Lang>(langAtom);
+    const languageName: string = useRecoilValue(langName);
+
+    const handleLangClick = () => {
+        setLang(getNextLanguage(lang));
+    }
 
     const imageClick = () => {
         navigate('/');
@@ -47,14 +61,20 @@ const NormalHeader: FC = () => {
     return <AppBar position="absolute">
         <Stack width='100%' height='130px' columnGap={8} flexDirection='row' justifyContent='center'
                alignItems='center' bgcolor="#f6efe3">
-            <IconButton>
-                <Typography color='#442e1d' variant='h6'>Slovensky</Typography>
-                <LanguageIcon style={{color: 'black'}}/>
-            </IconButton>
-            <Button onClick={imageClick}>
-                <img onClick={imageClick} style={{width: '140px'}} alt='Panthera park logo' src={Logo}/>
-            </Button>
-            <MenuDrawer/>
+            <Stack direction="row" justifyContent="end" width='40%'>
+                <IconButton onClick={handleLangClick}>
+                    <Typography color='#442e1d' variant='h6'>{languageName}</Typography>
+                    <LanguageIcon style={{color: 'black'}}/>
+                </IconButton>
+            </Stack>
+            <Stack direction="row" justifyContent="center" width='20%'>
+                <Button onClick={imageClick}>
+                    <img onClick={imageClick} style={{width: '140px'}} alt='Panthera park logo' src={Logo}/>
+                </Button>
+            </Stack>
+            <Stack direction="row" justifyContent="start" width='40%'>
+                <MenuDrawer/>
+            </Stack>
         </Stack>
     </AppBar>;
 }

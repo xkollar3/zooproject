@@ -1,32 +1,32 @@
 [
   {
-    "sk" : "DOSPELÍ OD 18 ROKOV",
-    "skNote": "",
+    "fareType": "AdultsFare",
+    "fareNote": null,
     "price": "10 €"
   },
   {
-    "sk": "DETI DO 3 ROKOV",
-    "skNote": "",
-    "price": "ZDARMA"
+    "fareType": "ChildrenUnderThreeFare",
+    "fareNote": null,
+    "price": null
   },
   {
-    "sk" : "OD 3 DO 18 ROKOV",
-    "skNote": "",
+    "fareType": "ChildrenFare",
+    "fareNote": null,
     "price": "5 €"
   },
   {
-    "sk": "ŠTUDENTSKÝ DO 26 ROKOV",
-    "skNote": "S PLATNÝM DOKLADOM O ŠTÚDIU, ISIC-ZVÝHODNENÁ CENA",
+    "fareType": "StudentFare",
+    "fareNote": "StudentFareNote",
     "price": "5 €"
   },
   {
-    "sk": "DRŽITEĽIA PREUKAZU ZŤP",
-    "skNote": "PO PREDLOŽENÍ DOKLADU O ZŤP",
+    "fareType": "InvalidFare",
+    "fareNote": "InvalidFareNote",
     "price": "7 €"
   },
   {
-    "sk": "DRŽITEĽIA PREUKAZU ZŤP-S",
-    "skNote": "",
+    "fareType": "InvalidFareSupport",
+    "fareNote" : null,
     "price": "5 € + 5 €"
   }
 ]

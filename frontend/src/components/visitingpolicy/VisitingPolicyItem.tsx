@@ -2,7 +2,7 @@ import {FC} from "react";
 import {Box, CardMedia, Stack, Typography, useMediaQuery} from "@mui/material";
 
 interface VisitingPolicyItemProps {
-    sk: string,
+    text: string,
     icon: string,
     circular: boolean,
     textColor: string,
@@ -27,7 +27,7 @@ export const VisitingPolicyItem: FC<VisitingPolicyItemProps> = (props: VisitingP
             }
         </Box>
         <Box>
-            <Typography fontFamily='Bebas Neue, sans-serif' color={props.textColor} align='left' variant={isMobile ? 'h6' : 'h5'}>{props.sk}</Typography>
+            <Typography fontFamily='Bebas Neue, sans-serif' color={props.textColor} align='left' variant={isMobile ? 'h6' : 'h5'}>{props.text}</Typography>
         </Box>
     </Stack>;
 }

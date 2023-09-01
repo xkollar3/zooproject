@@ -4,13 +4,18 @@ import {Link} from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import {useRecoilValue} from "recoil";
+import {langAtom} from "../../localization/lang";
+import {translatePhrase} from "../../localization/translation";
 
 export const SocialMediaSection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
+    const lang = useRecoilValue(langAtom);
+
     return <Stack direction='column' alignItems='center' justifyContent='center'>
-        <Typography fontWeight='1000' color='text.secondary' variant='h4'>Sociálne siete</Typography>
+        <Typography fontWeight='1000' color='text.secondary' variant='h4'>{translatePhrase(lang, "SocialMediaCaption")}</Typography>
         <Stack padding='20px' direction={isMobile ? 'column' : 'row'}>
             <Link to="https://www.facebook.com/profile.php?id=100095276537413">
                 <IconButton>
