@@ -2,9 +2,13 @@ import {useState} from "react";
 import {Divider, Drawer, IconButton, List, Stack, Typography, useMediaQuery,} from "@mui/material";
 import {ArrowBack, Menu} from "@mui/icons-material";
 import {MenuDrawerItem} from "./MenuDrawerItem";
+import {useRecoilValue} from "recoil";
+import {langAtom} from "../../../localization/lang";
+import {translatePhrase} from "../../../localization/translation";
 
 export default function MenuDrawer() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const lang = useRecoilValue(langAtom);
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
@@ -12,7 +16,7 @@ export default function MenuDrawer() {
 
     return <>
         <IconButton onClick={() => setIsDrawerOpen(true)}>
-            <Typography padding='10' variant='h6' color='text.primary'>Menu</Typography>
+            <Typography padding='10' variant='h6' color='text.primary'>{translatePhrase(lang, 'MenuName')}</Typography>
             <Menu style={{color: 'black'}}/>
         </IconButton>
         <Drawer anchor='right'
@@ -27,15 +31,15 @@ export default function MenuDrawer() {
                     <IconButton onClick={() => setIsDrawerOpen(false)}>
                         <ArrowBack/>
                     </IconButton>
-                    <MenuDrawerItem name={'Otváracie hodiny'} location={'/opening-hours'} key={'openingHours'} setIsDrawerOpen={setIsDrawerOpen}/>
+                    <MenuDrawerItem name={translatePhrase(lang, 'MenuOpeningHours')} location={'/opening-hours'} key={'openingHours'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <MenuDrawerItem name={'Kontakt'} location={'/contact'} key={'contact'} setIsDrawerOpen={setIsDrawerOpen}/>
+                    <MenuDrawerItem name={translatePhrase(lang, 'MenuContact')} location={'/contact'} key={'contact'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <MenuDrawerItem name={'Zvieratá'} location={'/animals'} key={'animals'} setIsDrawerOpen={setIsDrawerOpen}/>
+                    <MenuDrawerItem name={translatePhrase(lang, 'MenuAnimals')} location={'/animals'} key={'animals'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <MenuDrawerItem name={'Cenník'} location={'/fares'} key={'fares'} setIsDrawerOpen={setIsDrawerOpen}/>
+                    <MenuDrawerItem name={translatePhrase(lang, 'MenuFares')} location={'/fares'} key={'fares'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
-                    <MenuDrawerItem name={'Návštevný poriadok'} location={'/visiting-policy'} key={'visitingPolicy'} setIsDrawerOpen={setIsDrawerOpen}/>
+                    <MenuDrawerItem name={translatePhrase(lang, 'MenuVisitingPolicy')} location={'/visiting-policy'} key={'visitingPolicy'} setIsDrawerOpen={setIsDrawerOpen}/>
                     <Divider/>
                 </List>
             </Stack>

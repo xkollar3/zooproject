@@ -5,10 +5,15 @@ import {FareItem} from "./FareItem";
 import tickets from '/policy_icons/tickets.png';
 import exclamationIcon from '../../assets/exclamation_mark.png';
 import leaves from '../../assets/leaves.png';
+import {useRecoilValue} from "recoil";
+import {langAtom} from "../../localization/lang";
+import {translatePhrase} from "../../localization/translation";
 
 export const FareSection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
+
+    const lang = useRecoilValue(langAtom);
 
     return <Box display='flex' bgcolor='#f6efe3' alignItems='center' paddingBottom='20px'
                 paddingTop='20px' flexDirection='column' rowGap={2} position='relative'>
@@ -24,7 +29,7 @@ export const FareSection: FC = () => {
             <Stack rowGap={4} padding='50px' bgcolor='#f8ba57' direction='column' alignItems='center'
                    position='relative'>
                 <Typography fontFamily='Anton, sans-serif' color='#44321e' align='center' marginBottom='20px'
-                            variant={isMobile ? 'h5' : 'h3'}>Cena Vstupu</Typography>
+                            variant={isMobile ? 'h5' : 'h3'}>{translatePhrase(lang, 'FareCaption')}</Typography>
                 <Box width={isMobile ? '50px' : '75px'} height={isMobile ? '50px' : '75px'} style={{
                     position: 'absolute',
                     top: '50px',
@@ -42,8 +47,7 @@ export const FareSection: FC = () => {
                         <CardMedia component='img' alt='Exclamation mark icon' src={exclamationIcon}/>
                     </Box>
                     <Stack>
-                        <Typography fontFamily='Anton, sans-serif' variant='h6'>POPROSÍME ŠKOLY, ABY PRÍCHOD HLÁSILI
-                            VOPRED NA NÁŠ MAIL</Typography>
+                        <Typography fontFamily='Anton, sans-serif' variant='h6'>{translatePhrase(lang, 'SchoolEmailWarning')}</Typography>
                         <Typography align='center'>pantherapark123@gmail.com</Typography>
                     </Stack>
                 </Stack>

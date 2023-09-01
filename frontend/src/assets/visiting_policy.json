@@ -1,38 +1,38 @@
 [
   {
-    "sk": "ZÁKAZ KŔMENIA ZVIERAT, POKIAĽ TO NIE JE POVOLENÉ NA URČITÝCH MIESTACH",
+    "phrase": "NoFeeding",
     "icon": "/policy_icons/no_feeding.jpg"
   },
   {
-    "sk": "ZÁKAZ HLADKANIA A VKLADANIA RÚK DO KLIETOK",
+    "phrase": "NoHands",
     "icon": "/policy_icons/no_grabbing_bars.jpg"
   },
   {
-    "sk": "ZÁKAZ KRIČAŤ A BUDIŤ ZVIERATÁ",
+    "phrase": "NoShouting",
     "icon": "/policy_icons/no_shouting.jpg"
   },
   {
-    "sk": "ZÁKAZ OPIERANIA SA O KLIETKY V CELOM AREÁLI",
+    "phrase": "NoLeaning",
     "icon": "/policy_icons/no_leaning.jpg"
   },
   {
-    "sk": "PROSÍM, DODRŽUJTE ODSTUP OD KLIETOK NAJMENEJ 1.5 m",
+    "phrase": "SafeDistance",
     "icon": "/policy_icons/safe_distance.jpg"
   },
   {
-    "sk": "POZOR, KLIETKY SÚ POD ELEKTRICKÝM NAPÄTÍM",
+    "phrase": "ElectricityWarning",
     "icon": "/policy_icons/electricity.jpg"
   },
   {
-    "sk": "ZÁKAZ BEHANIA PO CELOM AREÁLI",
+    "phrase": "NoRunning",
     "icon": "/policy_icons/no_running.jpg"
   },
   {
-    "sk": "ZÁKAZ FAJČIŤ V CELOM AREÁLI",
+    "phrase": "NoSmoking",
     "icon": "/policy_icons/no_smoking.jpg"
   },
   {
-    "sk": "ZÁKAZ VSTUPU S DOMÁCIMI ZVIERATAMI",
+    "phrase": "NoOwnAnimals",
     "icon": "/policy_icons/no_own_animals.jpg"
   }
 ]
