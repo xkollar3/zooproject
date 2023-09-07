@@ -81,6 +81,26 @@ export type Phrase =
     'TheWaterDeer' |
     'TheFennecFox' |
     'TheRoyalMouse' |
-    'TheDesertLion'
+    'TheDesertLion' |
+    'CrownedChicken' |
+    'JungleLion' |
+    'CanadianWolf' |
+    'CrownedCrane' |
+    'EagleRaroh' |
+    'DesertLionFem' |
+    'RysOstrovid' |
+    'BengalTiger' |
+    'VeverickaFialonosa' |
+    'LionKruegery' |
+    'LionKruegeryFem' |
+    'FenekFox' |
+    'OrycSouthAfrican' |
+    'VodarkaJelenovita' |
+    'ZeriavStepny' |
+    'OrolSkalny' |
+    'ZeriavJaponsky' |
+    'LabutKosoroba' |
+    'PumaAmericka'
+
 
 export type PhraseAndText = Record<Phrase, string>;
