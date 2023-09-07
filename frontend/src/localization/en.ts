@@ -1,6 +1,25 @@
 import {PhraseAndText} from "./phrases";
 
 export const englishPhraseAndText: PhraseAndText = {
+    LionKruegeryFem: "Lion Kruegery (Female)",
+    CrownedChicken: "Crowned Chicken",
+    JungleLion: "Jungle Lion",
+    CanadianWolf: "Canadian Wolf",
+    CrownedCrane: "Crowned Crane",
+    EagleRaroh: "Eagle Raroh",
+    DesertLionFem: "Desert Lion (Female)",
+    RysOstrovid: "Lynx Ostrovid",
+    BengalTiger: "Bengal Tiger",
+    VeverickaFialonosa: "Squirrel Finlayson",
+    LionKruegery: "Lion Kruegery",
+    FenekFox: "Fennec Fox",
+    OrycSouthAfrican: "South African Oryx",
+    VodarkaJelenovita: "Water Deer",
+    ZeriavStepny: "Steppe Crane",
+    OrolSkalny: "Golden Eagle",
+    ZeriavJaponsky: "Japanese Crane",
+    LabutKosoroba: "Swan Black-Necked",
+    PumaAmericka: "American Puma",
     TheKataLemur: "Kata Lemur",
     TheSteppeZebra: "Steppe Zebra",
     TheBlueAndYellowAra: "Blue and Yellow Ara",
@@ -71,7 +90,7 @@ export const englishPhraseAndText: PhraseAndText = {
     OpeningHoursNoteRegisterSummer: "* Entry open until 17:30",
     OpeningHoursNoteRegisterWinter: "* Entry open until 15:30",
     OpeningHoursWeekend: "Weekend",
-    OpeningHoursWorkDays: "Work Days",
+    OpeningHoursWorkDays: "Tuesday - Friday",
     OpeningHoursCaption: "Opening Hours",
     MenuAnimals: "Animals",
     MenuContact: "Contact",
@@ -88,7 +107,7 @@ export const englishPhraseAndText: PhraseAndText = {
     ContactFooter: 'Contact info',
     VisitingAddressFooter: 'Visiting address',
     AboutSectionCaption: 'About us',
-    AboutSectionContent: 'Our park strives to provide exciting experiences for visitors of all age groups. \\n\\nWe also offer various fun activities for children, such as bounce houses, playgrounds, and animal feeding. We also have a souvenir shop where you can purchase mementos from your visit. Come and have an unforgettable day full of adventure!',
+    AboutSectionContent: 'Our park strives to provide exciting experiences for visitors of all age groups. \n\nWe also offer various fun activities for children, such as bounce houses, playgrounds, and animal feeding. We also have a souvenir shop where you can purchase mementos from your visit. Come and have an unforgettable day full of adventure!',
     ZooDescriptionCaption: 'Some things about our park',
     ZooDescriptionContent: 'Our park is an amazing place where you can discover various species of animals from all over the world. We have tigers, monkeys, zebras, and many other fascinating creatures here. It\'s a great place to spend time with your family and an opportunity to learn more about nature. Don\'t forget to bring your camera to capture unforgettable moments with our animals.\uD83D\uDCF8'
 }

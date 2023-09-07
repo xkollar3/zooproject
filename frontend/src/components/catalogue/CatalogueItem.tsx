@@ -11,9 +11,6 @@ export const CatalogueItem: FC<CatalogueItemProps> = (props: CatalogueItemProps)
     const [isHovered, setIsHovered] = useState(false);
 
     const imageStyle = {
-        maxHeight: '66%',
-        width: '100%',
-        height: 'auto',
         transition: 'opacity 0.3s ease',
         backgroundColor: 'black',
         opacity: isHovered ? '0.5' : '1',
@@ -27,9 +24,12 @@ export const CatalogueItem: FC<CatalogueItemProps> = (props: CatalogueItemProps)
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}>
         <Stack width='100%' height='100%' flexDirection='column' alignItems='center'>
-            <CardMedia style={imageStyle} component='img' alt={'Picture of ' + props.type}
-                       src={'/animals/' + props.path}/>
-            <Stack width='100%' height='100%' alignItems='center' justifyContent='center'>
+            <Box width='100%' height='66%' style={{ overflow: 'hidden' }}>
+                <CardMedia style={imageStyle} component='img' alt={'Picture of ' + props.type}
+                           src={'/animals/' + props.path}
+                sx={{objectFit: 'cover'}}/>
+            </Box>
+            <Stack width='100%' height='34%' alignItems='center' justifyContent='center'>
                 <Typography align='center' variant='h5'>{props.type}</Typography>
                 <Divider style={{width: '90%'}}/>
                 <Typography variant='h6'>{props.name}</Typography>

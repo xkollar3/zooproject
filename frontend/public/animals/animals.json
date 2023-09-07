@@ -128,5 +128,101 @@
     "name": "Tatu & spol.",
     "path": "lev_pustovy.jpg",
     "phrase": "TheDesertLion"
+  },
+  {
+    "name": "",
+    "path": "pav.jpg",
+    "phrase": "CrownedChicken"
+  },
+  {
+    "name": "",
+    "path": "lev_dzunglovy.jpg",
+    "phrase": "JungleLion"
+  },
+  {
+    "name": "",
+    "path": "canadian_wolf.jpg",
+    "phrase": "CanadianWolf"
+  },
+  {
+    "name": "",
+    "path": "crowned_crane.jpg",
+    "phrase": "CrownedCrane"
+  },
+  {
+    "name": "",
+    "path": "eagle_raroh.jpg",
+    "phrase": "EagleRaroh"
+  },
+  {
+    "name": "",
+    "path": "lev_pustovy_fem.jpg",
+    "phrase": "DesertLionFem"
+  },
+  {
+    "name": "",
+    "path": "rys_ostrovid.jpg",
+    "phrase": "RysOstrovid"
+  },
+  {
+    "name": "",
+    "path": "bengal_tiger.jpg",
+    "phrase": "BengalTiger"
+  },
+  {
+    "name": "",
+    "path": "vevericka_fialovonosova.jpg",
+    "phrase": "VeverickaFialonosa"
+  },
+  {
+    "name": "",
+    "path": "lion_krugery_fem.jpg",
+    "phrase": "LionKruegeryFem"
+  },
+  {
+    "name": "",
+    "path": "lion_krugery.jpg",
+    "phrase": "LionKruegery"
+  },
+  {
+    "name": "",
+    "path": "liska_fenek.jpg",
+    "phrase": "FenekFox"
+  },
+
+  {
+    "name": "",
+    "path": "oryx_juhoafricky.jpg",
+    "phrase": "OrycSouthAfrican"
+  },
+  {
+    "name": "",
+    "path": "vodarka_jelenovita.jpg",
+    "phrase": "VodarkaJelenovita"
+  },
+  {
+    "name": "",
+    "path": "zeriav_stepny.jpg",
+    "phrase": "ZeriavStepny"
+  },
+  {
+    "name": "",
+    "path": "orol_skalny.jpg",
+    "phrase": "OrolSkalny"
+  },
+  {
+    "name": "",
+    "path": "zeriav_japonsky.jpg",
+    "phrase": "ZeriavJaponsky"
+  },
+  {
+    "name": "",
+    "path": "labut_kosoroba.jpg",
+    "phrase": "LabutKosoroba"
+  },
+  {
+    "name": "",
+    "path": "puma_americka.jpg",
+    "phrase": "PumaAmericka"
   }
 ]
