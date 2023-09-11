@@ -17,7 +17,7 @@ export const MainPagePost: FC<MainPagePostProps> = (props: MainPagePostProps) =>
 
 
 const MainPagePostHorizontal: FC<MainPagePostProps> = (props: MainPagePostProps) => {
-    return <Stack display='flex' direction={props.reverse ? 'row-reverse' : 'row'} spacing={2} height='22rem' maxWidth='900px' margin='22px'>
+    return <Stack overflow='auto' display='flex' direction={props.reverse ? 'row-reverse' : 'row'} spacing={2} minHeight='22rem' maxWidth='900px' margin='22px'>
         <Box width='49.5%' justifyContent='center' alignItems='center' display='flex'>
             <CardMedia style={{width: '100%', height: '95%', objectFit: 'cover'}} component='img'
                        alt="about section animal img" src={props.imagePath}/>

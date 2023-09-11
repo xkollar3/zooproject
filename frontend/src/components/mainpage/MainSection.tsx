@@ -75,7 +75,9 @@ export const MainSection: FC = () => {
                 <MainPagePost {...getPostByName('about', false, lang)}/>
                 <MainPagePost {...getPostByName('zoo_description', true, lang)}/>
             </Stack>
-            <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>{translatePhrase(lang, 'Shortcuts')}</Typography>
+            <Box>
+                <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>{translatePhrase(lang, 'Shortcuts')}</Typography>
+            </Box>
             <Stack flexDirection={isMobile ? 'column' : 'row'} flexWrap='wrap' columnGap={5} justifyContent='center'
                    marginTop='10px'
                    marginBottom='20px' width='80%' alignItems='center' rowGap={2}>
