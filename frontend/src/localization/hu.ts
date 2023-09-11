@@ -1,6 +1,7 @@
 import {PhraseAndText} from "./phrases";
 
 export const hungarianPhraseAndText: PhraseAndText = {
+    Shortcuts: 'Gyorsbillentyűk',
     TheKataLemur: "Kata Lemur",
     TheSteppeZebra: "Sztyeppe Zebra",
     LionKruegeryFem: "Oroszlán Kruegery (Nőstény)",
@@ -43,7 +44,6 @@ export const hungarianPhraseAndText: PhraseAndText = {
     TheSquirrelMonkey: "Mókus Majom",
     TheConureParrot: "Kanári Papagáj",
     TheWaterDeer: "Vízi Szarvas",
-    TheFennecFox: "Fennec Róka",
     TheRoyalMouse: "Királyi Egér",
     TheDesertLion: "Sivatagi Oroszlán",
     ElectricityWarning: "FIGYELEM, A KETRECEK ELEKTROMOS FESZÜLTSÉG ALATT ÁLLNAK",

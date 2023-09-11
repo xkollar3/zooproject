@@ -8,7 +8,15 @@ export const CatalogueView: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     useEffect(() => {
+        handleScrollToTop();
         document.title = 'Zvieratá'
     }, [])
 
