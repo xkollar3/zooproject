@@ -5,10 +5,18 @@ import {Header} from "../components/common/Header";
 import {FooterSection} from "../components/common/FooterSection";
 
 export const VisitingPolicyView: FC = () => {
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
     useEffect(() => {
+        handleScrollToTop();
         document.title = 'Návštevnícky Poriadok'
     }, [])
 

@@ -79,7 +79,6 @@ export type Phrase =
     'TheSquirrelMonkey' |
     'TheConureParrot' |
     'TheWaterDeer' |
-    'TheFennecFox' |
     'TheRoyalMouse' |
     'TheDesertLion' |
     'CrownedChicken' |
@@ -100,7 +99,8 @@ export type Phrase =
     'OrolSkalny' |
     'ZeriavJaponsky' |
     'LabutKosoroba' |
-    'PumaAmericka'
+    'PumaAmericka' |
+    'Shortcuts'
 
 
 export type PhraseAndText = Record<Phrase, string>;

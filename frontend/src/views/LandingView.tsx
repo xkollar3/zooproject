@@ -5,10 +5,18 @@ import {FooterSection} from "../components/common/FooterSection";
 import {MainSection} from "../components/mainpage/MainSection";
 
 export const LandingView: FC = () => {
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
 
     useEffect(() => {
+        handleScrollToTop();
         document.title = 'Panthera Park'
     }, [])
 

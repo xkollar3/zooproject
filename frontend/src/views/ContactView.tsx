@@ -5,9 +5,17 @@ import {FooterSection, FooterSectionMobileContact} from "../components/common/Fo
 import {ContactSection} from "../components/contact/ContactSection";
 
 export const ContactView: FC = () => {
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm"));
 
     useEffect(() => {
+        handleScrollToTop();
         document.title = 'Kontakt'
     }, [])
 

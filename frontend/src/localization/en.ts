@@ -1,6 +1,7 @@
 import {PhraseAndText} from "./phrases";
 
 export const englishPhraseAndText: PhraseAndText = {
+    Shortcuts: "Shortcuts",
     LionKruegeryFem: "Lion Kruegery (Female)",
     CrownedChicken: "Crowned Chicken",
     JungleLion: "Jungle Lion",
@@ -43,7 +44,6 @@ export const englishPhraseAndText: PhraseAndText = {
     TheSquirrelMonkey: "Squirrel Monkey",
     TheConureParrot: "Conure Parrot",
     TheWaterDeer: "Water Deer",
-    TheFennecFox: "Fennec Fox",
     TheRoyalMouse: "Royal Mouse",
     TheDesertLion: "Desert Lion",
     ElectricityWarning: "CAUTION, CAGES ARE UNDER ELECTRICAL VOLTAGE",
