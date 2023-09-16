@@ -3,8 +3,13 @@ import {Box, useMediaQuery} from "@mui/material";
 import {Header} from "../components/common/Header";
 import {FooterSection, FooterSectionMobileContact} from "../components/common/FooterSection";
 import {ContactSection} from "../components/contact/ContactSection";
+import {useRecoilValue} from "recoil";
+import {langAtom} from "../localization/lang";
+import {translatePhrase} from "../localization/translation";
 
 export const ContactView: FC = () => {
+    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm"));
+
     const handleScrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -12,12 +17,12 @@ export const ContactView: FC = () => {
         });
     };
 
-    const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm"));
+    const lang = useRecoilValue(langAtom);
 
     useEffect(() => {
         handleScrollToTop();
-        document.title = 'Kontakt'
-    }, [])
+        document.title = translatePhrase(lang, 'MenuContact');
+    }, [lang])
 
     return<Box
         paddingTop={isMobile ? '130px' : '120px'}
