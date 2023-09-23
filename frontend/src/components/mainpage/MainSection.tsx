@@ -15,6 +15,7 @@ import PetsIcon from '@mui/icons-material/Pets';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import PlaceIcon from '@mui/icons-material/Place';
 import GavelIcon from '@mui/icons-material/Gavel';
+import YouTube from "react-youtube";
 
 interface PostType {
     name: string
@@ -31,7 +32,6 @@ const getPostByName = (name: string, reverse: boolean, lang: Lang): MainPagePost
         throw new Error('No post with name: ' + name + ' found');
     }
 
-
     return {
         text: translatePhrase(lang, post.contentPhrase as Phrase),
         imagePath: post.imagePath,
@@ -45,6 +45,13 @@ export const MainSection: FC = () => {
 
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
+
+    const height = isMobile ? '300px' : '500x';
+
+    const videoOpts = {
+        width: '100%',
+        height: height
+    }
 
     return <Box textAlign='center' bgcolor='#f6efe3'>
         <Stack rowGap={1} alignItems='center'>
@@ -75,6 +82,9 @@ export const MainSection: FC = () => {
                 <MainPagePost {...getPostByName('about', false, lang)}/>
                 <MainPagePost {...getPostByName('zoo_description', true, lang)}/>
             </Stack>
+            <Box width={isMobile ? '95%' : '700px'} sx={{'overflow': 'hidden'}}>
+                <YouTube style={{'objectFit': 'cover'}} opts={videoOpts} videoId='8MPt1JVyS68'/>
+            </Box>
             <Box>
                 <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>{translatePhrase(lang, 'Shortcuts')}</Typography>
             </Box>

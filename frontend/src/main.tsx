@@ -54,7 +54,7 @@ const theme = createTheme({
             secondary: '#44321e',
         },
         background: {
-            paper: '#b73337',
+            paper: '#f6efe3',
         },
         divider: '#442e1d',
     },
