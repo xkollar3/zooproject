@@ -25,7 +25,7 @@ export const OpeningHoursView: FC = () => {
         document.title = translatePhrase(lang, 'MenuOpeningHours');
     }, [lang])
 
-    return<Box
+    return <Box
         paddingTop={isMobile ? '130px' : '120px'}
         sx={{
             width: '100%',

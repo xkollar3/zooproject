@@ -28,6 +28,8 @@ export type Phrase =
     'November' |
     'December' |
     'February' |
+    'Summer' |
+    'Winter' |
     'ContactInfoCaption' |
     'FareCaption' |
     'AdultsFare' |

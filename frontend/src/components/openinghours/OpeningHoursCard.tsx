@@ -6,8 +6,7 @@ import {translatePhrase} from "../../localization/translation";
 
 interface OpeningHoursCardProps {
     key: string,
-    start: string,
-    end: string,
+    season: string,
     weekday: {
         from: string,
         to: string
@@ -33,7 +32,7 @@ export const OpeningHoursCard: FC<OpeningHoursCardProps> = (props: OpeningHoursC
                 justifyContent='center'>
         <Box width='100%' display='flex' flexDirection='column' rowGap={3}>
             <Typography fontFamily='Anton, sans-serif' align='center'
-                        variant='h4'>{props.start} - {props.end}</Typography>
+                        variant='h4'>{props.season}</Typography>
             <Stack alignItems='center'>
                 <Typography fontFamily='Bebas Neue, sans-serif' variant='h4'>{translatePhrase(lang, 'OpeningHoursWorkDays')}</Typography>
                 <Typography variant='h4'>{props.weekday.from} - {props.weekday.to}</Typography>

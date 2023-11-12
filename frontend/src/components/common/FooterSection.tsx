@@ -24,7 +24,7 @@ interface FooterSectionProps {
 
 const FooterSectionWide: FC<FooterSectionProps> = (props: FooterSectionProps) => {
     return <footer>
-        <Stack textAlign='center' display='flex' width='100%' bgcolor='#44321e'>
+        <Stack height='200px' textAlign='center' display='flex' width='100%' bgcolor='#44321e'>
             <Divider/>
             <Stack padding='20px' justifyContent='space-evenly' flexDirection='row' color='white'>
                 <Stack width='33%' fontSize='1px' alignItems='center'>
@@ -47,7 +47,7 @@ const FooterSectionWide: FC<FooterSectionProps> = (props: FooterSectionProps) =>
 
 const FooterSectionMobile: FC<FooterSectionProps> = (props: FooterSectionProps) => {
     return <footer>
-        <Stack display='flex' flexDirection='column' textAlign='center' width='100%' bgcolor='#44321e'>
+        <Stack mt='auto' display='flex' flexDirection='column' textAlign='center' width='100%' bgcolor='#44321e'>
             <Divider/>
             <Stack rowGap={5} padding='20px' justifyContent='space-evenly' flexDirection='column' color='white'>
                 <Stack width='100%' fontSize='1px' alignItems='center'>

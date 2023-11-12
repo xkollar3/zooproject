@@ -1,6 +1,8 @@
 import {PhraseAndText} from "./phrases";
 
 export const slovakPhraseAndText: PhraseAndText = {
+    Summer: "Letné obdobie",
+    Winter: "Zimné obdobie",
     Shortcuts: "Rýchle odkazy",
     LionKruegeryFem: "Lev Krúgery (samica)",
     CrownedChicken: "Páv Korunkatý",

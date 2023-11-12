@@ -1,6 +1,8 @@
 import {PhraseAndText} from "./phrases";
 
 export const hungarianPhraseAndText: PhraseAndText = {
+    Summer: "Nyári szezon",
+    Winter: "Téli szezon",
     Shortcuts: 'Gyorsbillentyűk',
     TheKataLemur: "Kata Lemur",
     TheSteppeZebra: "Sztyeppe Zebra",

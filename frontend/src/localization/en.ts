@@ -1,6 +1,8 @@
 import {PhraseAndText} from "./phrases";
 
 export const englishPhraseAndText: PhraseAndText = {
+    Summer: "Summer season",
+    Winter: "Winter season",
     Shortcuts: "Shortcuts",
     LionKruegeryFem: "Lion Kruegery (Female)",
     CrownedChicken: "Crowned Chicken",
