@@ -5,6 +5,7 @@ import {useRecoilValue} from "recoil";
 import {langAtom} from "../../localization/lang";
 import {translatePhrase} from "../../localization/translation";
 
+// todo: refactor this component, props of opening hours should be able to be changed at runtime
 export const OpeningHoursSection: FC = () => {
     const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("sm")
         || theme.breakpoints.down("xs"));
@@ -26,7 +27,7 @@ export const OpeningHoursSection: FC = () => {
 
                 <OpeningHoursCard key={'winter'} season={translatePhrase(lang, 'Winter')}
                                   weekday={{from: '9:30', to: '16:00'}}
-                                  weekend={{from: '9:00', to: '16:00'}} bgColor={'#f8b957'}
+                                  weekend={{from: '11:00', to: '16:00'}} bgColor={'#f8b957'}
                                   note1={translatePhrase(lang, 'OpeningHoursNoteHolidaysWinter')}
                                   note2={translatePhrase(lang, 'OpeningHoursNoteRegisterWinter')}
                                   width={isMobile ? '100%' : '50%'}/>
@@ -49,7 +50,7 @@ export const OpeningHoursSection: FC = () => {
                                   width={isMobile ? '100%' : '50%'}/>
                 <OpeningHoursCard key={'winter'} season={translatePhrase(lang, 'Winter')}
                                        weekday={{from: '9:30', to: '16:00'}}
-                                       weekend={{from: '9:00', to: '16:00'}} bgColor={'#f8b957'}
+                                       weekend={{from: '11:00', to: '16:00'}} bgColor={'#f8b957'}
                                        note1={translatePhrase(lang, 'OpeningHoursNoteHolidaysWinter')}
                                        note2={translatePhrase(lang, 'OpeningHoursNoteRegisterWinter')}
                                        width={isMobile ? '100%' : '50%'}/>
