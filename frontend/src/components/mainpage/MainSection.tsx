@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {Box, Stack, Typography, useMediaQuery} from "@mui/material";
+import {Box, CardMedia, Stack, Typography, useMediaQuery} from "@mui/material";
 import Banner from "../../assets/banner.jpg"
 import {MainPagePost, MainPagePostProps} from "./MainPagePost";
 import posts from '../../assets/main_page_posts.json';
@@ -16,6 +16,7 @@ import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import PlaceIcon from '@mui/icons-material/Place';
 import GavelIcon from '@mui/icons-material/Gavel';
 import YouTube from "react-youtube";
+import ClosedPost from '../../assets/closed_post.jpg';
 
 interface PostType {
     name: string
@@ -84,6 +85,9 @@ export const MainSection: FC = () => {
             </Stack>
             <Box width={isMobile ? '95%' : '700px'} sx={{'overflow': 'hidden'}}>
                 <YouTube style={{'objectFit': 'cover'}} opts={videoOpts} videoId='8MPt1JVyS68'/>
+            </Box>
+            <Box width={isMobile ? '95%' : '700px'} sx={{'overflow': 'hidden'}}>
+                <CardMedia component='img' style={{'objectFit': 'cover'}} src={ClosedPost}/>
             </Box>
             <Box>
                 <Typography fontWeight='1000' variant={isMobile ? 'h5' : 'h4'}>{translatePhrase(lang, 'Shortcuts')}</Typography>
